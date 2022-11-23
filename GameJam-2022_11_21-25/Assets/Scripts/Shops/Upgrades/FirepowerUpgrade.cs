@@ -4,13 +4,23 @@ using UnityEngine;
 
 namespace GameJam
 {
-    [CreateAssetMenu(fileName = "FirepowerUpgrade", menuName = "FirepowerUpgrade")]
+    [CreateAssetMenu(fileName = "FirepowerUpgrades", menuName = "FirepowerUpgrade")]
     public class FirepowerUpgrade : Buff
     {
         // Start is called before the first frame update
-        public override void AddUpgrade(CharacterStat ship)
+        public override void AddMachineGunUpgrade(CharacterStat ship)
         {
-            ship.firepower += buff;
+            ship.machinegunfirepower += buff;
+            shopPurchaseAmount++;
+        }
+        public override void AddLaserUpgrade(CharacterStat ship)
+        {
+            ship.laserfirepower += buff;
+            shopPurchaseAmount++;
+        }
+        public override void AddRocketUpgrade(CharacterStat ship)
+        {
+            ship.laserfirepower += buff;
             shopPurchaseAmount++;
         }
     }

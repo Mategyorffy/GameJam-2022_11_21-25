@@ -44,7 +44,7 @@ namespace GameJam
             else
             {
                 shipInventory.currentMoney -= totalGoldCost;
-                buff.AddUpgrade(shipInventory);
+                buff.AddGenericUpgrade(shipInventory);
 
             }
         }

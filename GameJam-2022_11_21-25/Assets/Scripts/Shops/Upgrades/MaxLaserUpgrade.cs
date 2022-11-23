@@ -8,7 +8,7 @@ namespace GameJam
     public class MaxLaserUpgrade : Buff
     {
         // Start is called before the first frame update
-        public override void AddUpgrade(CharacterStat ship)
+        public override void AddGenericUpgrade(CharacterStat ship)
         {
             ship.maxLaserAmmo += buff;
             shopPurchaseAmount++;

@@ -91,7 +91,10 @@ namespace GameJam
         public float crewSpeed;
 
         //Base damage for physical attack moves
-        public float firepower;
+        public float machinegunfirepower;
+        public float rocketfirepower;
+        public float laserfirepower;
+
 
         //Base damage for magic attack moves
         public float energyPower;
@@ -102,8 +105,7 @@ namespace GameJam
         //Resistance for magical attacks
         public float barrierStrength;
         //List of basic attacks and spells
-        public List<BasicAttacks> machineGunMoveList = new List<BasicAttacks>();
-        public List<BasicAttacks> specialGunsMoveList = new List<BasicAttacks>();
+        
         //Dead bool
         public bool deadShip;
         public void CheckHealth()
