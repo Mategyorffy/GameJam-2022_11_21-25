@@ -37,6 +37,8 @@ namespace GameJam
         [SerializeField] private Image rocketButtonImage;
         public bool buttonPressable;
 
+        public List<GameObject> enemies = new List<GameObject>();
+
         private void Start()
         {
             hpSlider.value = playerSO.currentHP;
@@ -50,6 +52,7 @@ namespace GameJam
             machineGunButtonImage.color = Color.gray;
             rocketButtonImage.color = Color.gray;
             laserButtonImage.color = Color.gray;
+
 
         }
 
@@ -111,6 +114,8 @@ namespace GameJam
         }
         public void ActivateAttackButtons()
         {
+            
+
             reloadText.text = "Take Action";
             // Machine Gun 0
             //Rockets 1

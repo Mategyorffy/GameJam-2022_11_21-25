@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: TestPlayer
   m_EditorClassIdentifier: 
   name: TEST
-  maxHP: 10
-  _currentHP: 10
+  maxHP: 100
+  _currentHP: 0
   maxFuel: 10
   _currentFuel: 10
   maxRocketAmmo: 10
-  _currentRocketAmmo: 10
+  _currentRocketAmmo: 6
   maxLaserAmmo: 10
   _currentLaserAmmo: 5
   maxMoney: 100
   _currentMoney: 50
   crewSpeed: 10
-  firepower: 1
+  machinegunfirepower: 0
+  rocketfirepower: 0
+  laserfirepower: 0
   energyPower: 1
   hullStrength: 1
   barrierStrength: 1
-  machineGunMoveList: []
-  specialGunsMoveList: []
   deadShip: 0

@@ -1691,6 +1691,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c248f586b89f0aa41b3e23a95ca268cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemiesInGame: []
+  enemyButton: {fileID: 0}
+  spacer: {fileID: 0}
 --- !u!114 &1322527495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,6 +1712,9 @@ MonoBehaviour:
   - {fileID: 3719537149063513562, guid: 0a82586ff3e06c24688f452c8cd83eae, type: 3}
   enemySpawnLocations:
   - {fileID: 41121883}
+  - {fileID: 810395744}
+  - {fileID: 164882851}
+  - {fileID: 520641970}
   playerSpawnlocation: {fileID: 1322527496}
 --- !u!4 &1322527496
 Transform:
