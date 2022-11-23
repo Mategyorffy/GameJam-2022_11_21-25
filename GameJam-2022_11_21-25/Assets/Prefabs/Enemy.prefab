@@ -360,6 +360,11 @@ MonoBehaviour:
   currentState: 0
   hpSlider: {fileID: 3268663203993991259}
   healthCanvas: {fileID: 3669429547633479343}
+  currentCooldown: 0
+  player: {fileID: 0}
+  RocketObj: {fileID: 5375776460845595616, guid: 580221428fdf3fb4bbefccceef906d7e, type: 3}
+  LaserObj: {fileID: 6032877412765063731, guid: 9d25b6171adb73c418b533d22acea2cf, type: 3}
+  MachineGunObj: {fileID: 795977020765660914, guid: ac679b9cef216de4aaa12fe638882902, type: 3}
 --- !u!1 &4476500108121834680
 GameObject:
   m_ObjectHideFlags: 0

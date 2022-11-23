@@ -194,5 +194,18 @@ namespace GameJam
                 return;
             }
         }
+        public void TakeMachineGunDamage(float Power)
+        {
+            playerSO.currentHP = playerSO.currentHP - Power;
+        }
+        public void TakeLaserDamage(float Power)
+        {
+            playerSO.currentHP = playerSO.currentHP - Power;
+        }
+        public void TakeRocketDamage(float power)
+        {
+            playerSO.currentHP = playerSO.currentHP - power;
+        }
+
     }
 }
