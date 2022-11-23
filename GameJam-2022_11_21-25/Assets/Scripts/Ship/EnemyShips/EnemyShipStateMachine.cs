@@ -26,9 +26,9 @@ namespace GameJam
 
         private void Start()
         {
-            
+            healthCanvas.worldCamera = GameObject.FindGameObjectWithTag("PlayerCamera").GetComponent<Camera>();
 
-            hpSlider.gameObject.transform.position = this.gameObject.transform.position;
+           
         }
 
     }
