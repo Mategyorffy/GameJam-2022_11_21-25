@@ -8,7 +8,7 @@ public class ship : MonoBehaviour
 
     public Vector3 startPosition;
     public Vector3 nextDestination;
-    private float lerpDuration = 3;
+    private float lerpDuration = 2;
 
 
 
@@ -17,7 +17,7 @@ public class ship : MonoBehaviour
         float timeElapsed = 0;
         while (timeElapsed < lerpDuration)
         {
-            transform.position = Vector3.Lerp(startPosition, nextDestination, Mathf.SmoothStep(0, 1, timeElapsed / lerpDuration));
+            transform.position = Vector3.Lerp(startPosition, nextDestination, timeElapsed / lerpDuration);
             timeElapsed += Time.deltaTime;
             yield return null;
         }
