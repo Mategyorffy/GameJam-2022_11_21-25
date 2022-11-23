@@ -8,7 +8,7 @@ namespace GameJam
     public class BarrierUpgrade : Buff
     {
         // Start is called before the first frame update
-        public override void AddUpgrade(CharacterStat ship)
+        public override void AddGenericUpgrade(CharacterStat ship)
         {
             ship.barrierStrength += buff;
             shopPurchaseAmount++;

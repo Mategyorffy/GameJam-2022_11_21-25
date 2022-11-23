@@ -26,7 +26,9 @@ namespace GameJam
             shipCurrent.maxLaserAmmo = shipStart.maxLaserAmmo;
             shipCurrent.currentLaserAmmo = shipStart.maxLaserAmmo;
             shipCurrent.crewSpeed = shipStart.crewSpeed;
-            shipCurrent.firepower = shipStart.firepower;
+            shipCurrent.machinegunfirepower = shipStart.machinegunfirepower;
+            shipCurrent.laserfirepower = shipStart.laserfirepower;
+            shipCurrent.rocketfirepower = shipStart.rocketfirepower;
             shipCurrent.energyPower = shipStart.energyPower;
             shipCurrent.hullStrength = shipStart.hullStrength;
             shipCurrent.barrierStrength = shipStart.barrierStrength;
@@ -40,7 +42,9 @@ namespace GameJam
             Debug.Log("Begin leveling process on the ship");
             shipCurrent.maxHP += basicLevelUpAmount;
             shipCurrent.crewSpeed += basicLevelUpAmount;
-            shipCurrent.firepower += basicLevelUpAmount;
+            shipCurrent.machinegunfirepower += basicLevelUpAmount;
+            shipCurrent.laserfirepower += basicLevelUpAmount;
+            shipCurrent.rocketfirepower += basicLevelUpAmount;
             shipCurrent.energyPower += basicLevelUpAmount;
             shipCurrent.hullStrength += basicLevelUpAmount;
             shipCurrent.barrierStrength += basicLevelUpAmount;
