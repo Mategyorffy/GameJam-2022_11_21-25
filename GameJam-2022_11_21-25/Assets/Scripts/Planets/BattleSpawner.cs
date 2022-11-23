@@ -8,14 +8,29 @@ namespace GameJam
     {
         [SerializeField] ShipBattleStateMachine shipbattle;
         [Space]
-        [SerializeField] CharacterStat thePlayer;
-        [SerializeField] List<EnemyShipStateMachine> enemies = new List<EnemyShipStateMachine>();
-
+        [SerializeField] GameObject playerToSpawn;
+        [SerializeField] List<GameObject> enemies = new List<GameObject>();
         [SerializeField] List<Transform> enemySpawnLocations = new List<Transform>();
+        [SerializeField] Transform playerSpawnlocation;
+       
 
-
-
+        private  void Start()
+        {
             
-        
+
+            GameObject.Instantiate(playerToSpawn, playerSpawnlocation);
+
+
+            foreach (Transform loc in enemySpawnLocations)
+            {
+
+
+                GameObject.Instantiate(enemies[0], loc.position, loc.rotation);
+            }
+
+        }
+
+
+
     }
 }

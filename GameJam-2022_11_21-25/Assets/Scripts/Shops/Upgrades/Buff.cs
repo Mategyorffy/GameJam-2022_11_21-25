@@ -11,7 +11,20 @@ namespace GameJam
         public int shopPurchaseAmount;
         public int goldCost;
 
-        public virtual void AddUpgrade(CharacterStat character)
+
+        public virtual void AddGenericUpgrade(CharacterStat character)
+        {
+            Debug.Log("Made it to generic spot");
+        }
+        public virtual void AddMachineGunUpgrade(CharacterStat character)
+        {
+            Debug.Log("Made it to generic spot");
+        }
+        public virtual void AddRocketUpgrade(CharacterStat character)
+        {
+            Debug.Log("Made it to generic spot");
+        }
+        public virtual void AddLaserUpgrade(CharacterStat character)
         {
             Debug.Log("Made it to generic spot");
         }
