@@ -6,12 +6,26 @@ public class planet : MonoBehaviour
 {
 
     public bool isPlayerHere = false;
+    public bool playerWasHere = false;
+
+    [SerializeField] private bool safePlanet;
+    [SerializeField] private bool asteroid;
+    [SerializeField] private bool enemyPlanet;
+    [SerializeField] private bool wormHole;
+    [SerializeField] private bool finalBoss;
+
 
     [SerializeField] GameObject prArrow1; //possibleRoute
     [SerializeField] GameObject prArrow2; //possibleRoute
     [SerializeField] GameObject prArrow3; //possibleRoute
 
+    private Color customGrayColor;
 
+
+    private void Start()
+    {
+        customGrayColor = new Color(0.70f, 0.70f, 0.70f, 1.0f);
+    }
 
     void Update()
     {
@@ -44,8 +58,35 @@ public class planet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isPlayerHere = true;
+
+        if (safePlanet)
+        {
+
+        }
+        if (asteroid)
+        {
+
+        }
+        if (enemyPlanet)
+        {
+
+        }
+        if (wormHole)
+        {
+                
+        }
+        if (finalBoss)
+        {
+
+        }
     }
 
-    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        playerWasHere = true;
+        GetComponent<SpriteRenderer>().material.color = customGrayColor;
+    }
+
+
 
 }

@@ -9,7 +9,9 @@ namespace GameJam
     {
         public int buff;
         public int shopPurchaseAmount;
+        public int shopYesVariable;
         public int goldCost;
+        public string shopInfoText;
 
 
         public virtual void AddGenericUpgrade(CharacterStat character)
