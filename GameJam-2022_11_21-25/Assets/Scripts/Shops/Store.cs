@@ -206,13 +206,13 @@ namespace GameJam
             {
                 case 1:
                     repairShop.SetActive(true);
+                    repairText.text = "Do you want to repair your ship for: " + repairCost + " gold?";
                     InformationPanel.SetActive(false);
-                    repairText.text = "Do you want to repair your ship for: " + repairCost + "?";
                     break;
                 case 2:
                     fuelShop.SetActive(true);
+                    fuelText.text = "Do you want to refuel your ship for: " + fuelCost + " gold?";
                     InformationPanel.SetActive(false);
-                    fuelText.text = "Do you want to refuel your ship for: " + fuelCost + "?";
                     break;
                 case 3:
                     upgradeShop.SetActive(true);

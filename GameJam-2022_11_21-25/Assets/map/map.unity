@@ -4835,8 +4835,8 @@ MonoBehaviour:
   repairShop: {fileID: 1947368323}
   upgradeShop: {fileID: 1936139319}
   InformationPanel: {fileID: 0}
-  fuelCost: 0
-  repairCost: 0
+  fuelCost: 100
+  repairCost: 50
   singleLaserCost: 0
   singleRocketCost: 0
   totalLaserCost: 0
@@ -21319,6 +21319,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2436559611985575122, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436559611985575122, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
+      propertyPath: m_fontSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436559611985575122, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2436559612502719091, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -21430,6 +21442,18 @@ PrefabInstance:
     - target: {fileID: 2436559612976912958, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
       propertyPath: m_Name
       value: ExplorationCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875897423246033076, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875897423246033076, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
+      propertyPath: m_fontSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875897423246033076, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3301122661114976746, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
