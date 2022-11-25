@@ -49,14 +49,15 @@ namespace GameJam
             
             healthCanvas.worldCamera = GameObject.FindGameObjectWithTag("PlayerCamera").GetComponent<Camera>();
             shipbattle = GameObject.Find("BattleManager").GetComponent<ShipBattleStateMachine>();
-            hpText.text = $"{enemySO.currentHP} HP";
             ProjectileFinalPos = GameObject.Find("ProjectilePos");
             enemySO.currentHP = enemySO.maxHP;
             enemySO.currentLaserAmmo = enemySO.maxLaserAmmo;
             enemySO.currentRocketAmmo = enemySO.maxRocketAmmo;
+            hpText.text = $"{enemySO.currentHP} HP";
+
 
         }
-        
+
 
         private void Update()
         {

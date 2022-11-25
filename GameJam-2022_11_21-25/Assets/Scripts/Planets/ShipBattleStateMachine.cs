@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 namespace GameJam
 {
     public class ShipBattleStateMachine : MonoBehaviour
     {
         public List<GameObject> EnemiesInGame = new List<GameObject>();
 
-     
-        
-        public Transform spacer;
-        [SerializeField] Transform enemyButtonLoc;
+
+
+        [SerializeField] private PlayerShipStateMachine player;
 
         [SerializeField] private GameObject Button1;
         [SerializeField] private GameObject Button2;
@@ -19,6 +20,9 @@ namespace GameJam
         [SerializeField] private GameObject Button4;
 
         [SerializeField] private AudioSource MainAudio;
+
+        [SerializeField] private CharaterLevelSystem characterLevelUp;
+
 
         private void Start()
         {
@@ -49,6 +53,10 @@ namespace GameJam
             {
                 BattleWon();
             }
+            if(player.playerSO.currentHP <= 0)
+            {
+                BattleLost();
+            }
         }
 
         public void DisableEnemyButtons()
@@ -69,12 +77,16 @@ namespace GameJam
 
         public void BattleWon()
         {
-            
 
+            characterLevelUp.LevelUpShip();
             Debug.Log("YOU WINN");
+          
         }
 
-
+        public void BattleLost()
+        {
+            SceneManager.LoadScene(0);
+        }
 
 
 

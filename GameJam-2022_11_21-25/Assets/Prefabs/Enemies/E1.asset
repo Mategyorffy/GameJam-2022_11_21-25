@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1890caa5196a3c4499de012d589b2085, type: 3}
   m_Name: E1
   m_EditorClassIdentifier: 
-  name: 
-  maxHP: 0
-  _currentHP: 0
+  name: E1
+  maxHP: 50
+  _currentHP: 50
   maxFuel: 0
   _currentFuel: 0
-  maxRocketAmmo: 0
-  _currentRocketAmmo: 0
-  maxLaserAmmo: 0
-  _currentLaserAmmo: 0
+  maxRocketAmmo: 1
+  _currentRocketAmmo: 1
+  maxLaserAmmo: 1
+  _currentLaserAmmo: 1
   maxMoney: 0
   _currentMoney: 0
-  crewSpeed: 0
-  machinegunfirepower: 0
-  rocketfirepower: 0
-  laserfirepower: 0
+  crewSpeed: 2
+  machinegunfirepower: 5
+  rocketfirepower: 10
+  laserfirepower: 15
   energyPower: 0
   hullStrength: 0
   barrierStrength: 0

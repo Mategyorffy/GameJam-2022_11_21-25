@@ -65,6 +65,7 @@ namespace GameJam
         [SerializeField] private AudioClip HpLow;
         [SerializeField] private AudioClip Explosion1;
         [SerializeField] private AudioClip Explosion2;
+        
         [Space]
         [SerializeField] private List<Light> HudLights = new List<Light>();
         
