@@ -9,7 +9,7 @@ public class arrow : MonoBehaviour
     [SerializeField] GameObject nextPlanet;
     [SerializeField] ship spaceShip;
     [SerializeField] planet planetscript;
-    
+    [SerializeField] CharacterStat shipFuel;
 
     public Sprite arrowOff;
     public Sprite arrowOn;
@@ -35,6 +35,7 @@ public class arrow : MonoBehaviour
         spaceShip.nextDestination = nextPlanet.transform.position;
 
         StartCoroutine(spaceShip.Lerp());
+        shipFuel.currentFuel--;
     }
 
 

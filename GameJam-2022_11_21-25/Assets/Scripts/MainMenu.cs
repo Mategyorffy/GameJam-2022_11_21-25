@@ -33,6 +33,7 @@ namespace GameJam
 
         public IEnumerator Countdown() 
         {
+            StartCoroutine(LowerSound());
             information.text = "Voyage begins in: \n 3";
             yield return new WaitForSeconds(1);
             information.text = "Voyage begins in: \n 2";
@@ -40,6 +41,17 @@ namespace GameJam
             information.text = "Voyage begins in: \n 1";
             yield return new WaitForSeconds(1);
             SceneManager.LoadScene(1);
+        }
+
+        public IEnumerator LowerSound()
+        {
+            while (titleMusic.volume > 0)
+            {
+                float decreaseTime;
+                decreaseTime = .01f;
+                titleMusic.volume -= decreaseTime;
+                yield return new WaitForSeconds (.4f);
+            }
         }
     }
 }
