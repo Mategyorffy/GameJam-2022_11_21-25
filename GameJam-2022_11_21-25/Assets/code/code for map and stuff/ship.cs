@@ -9,8 +9,9 @@ public class ship : MonoBehaviour
     public Vector3 startPosition;
     public Vector3 nextDestination;
     private float lerpDuration = 2;
+    
 
-
+    
 
     public IEnumerator Lerp()
     {
