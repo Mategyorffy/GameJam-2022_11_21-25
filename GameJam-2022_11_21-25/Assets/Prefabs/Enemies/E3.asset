@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1890caa5196a3c4499de012d589b2085, type: 3}
+  m_Name: E3
+  m_EditorClassIdentifier: 
+  name: E3
+  maxHP: 80
+  _currentHP: 80
+  maxFuel: 0
+  _currentFuel: 0
+  maxRocketAmmo: 2
+  _currentRocketAmmo: 2
+  maxLaserAmmo: 2
+  _currentLaserAmmo: 2
+  maxMoney: 0
+  _currentMoney: 0
+  crewSpeed: 10
+  machinegunfirepower: 10
+  rocketfirepower: 20
+  laserfirepower: 15
+  energyPower: 0
+  hullStrength: 0
+  barrierStrength: 0
+  deadShip: 0

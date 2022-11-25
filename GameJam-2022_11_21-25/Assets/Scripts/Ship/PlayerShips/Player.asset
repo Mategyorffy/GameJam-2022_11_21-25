@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   maxHP: 100
-  _currentHP: 50
+  _currentHP: 80
   maxFuel: 100
   _currentFuel: 50
   maxRocketAmmo: 0
@@ -23,10 +23,10 @@ MonoBehaviour:
   _currentLaserAmmo: 0
   maxMoney: 0
   _currentMoney: 100
-  crewSpeed: 0
-  machinegunfirepower: 0
-  rocketfirepower: 0
-  laserfirepower: 0
+  crewSpeed: 10
+  machinegunfirepower: 10
+  rocketfirepower: 20
+  laserfirepower: 15
   energyPower: 0
   hullStrength: 0
   barrierStrength: 0

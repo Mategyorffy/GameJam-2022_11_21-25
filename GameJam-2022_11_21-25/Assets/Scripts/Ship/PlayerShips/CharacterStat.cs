@@ -11,6 +11,7 @@ namespace GameJam
         
         public string name;
         public event Action<float> OnPlayerHealthChange;
+        public event Action<float> OnEnemyHealthChange;
         public event Action<int> OnRocketChange;
         public event Action<int> OnLaserChange;
         public event Action<float> OnFuelChange;
@@ -26,6 +27,7 @@ namespace GameJam
             set
             {
                 _currentHP = value;
+                
                 OnPlayerHealthChange?.Invoke(value);
 
             }
