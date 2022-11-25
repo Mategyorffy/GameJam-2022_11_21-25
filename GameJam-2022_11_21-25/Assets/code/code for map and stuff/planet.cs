@@ -114,6 +114,7 @@ public class planet : MonoBehaviour
 
     public void WormHoleYes()
     {
+        //move it here!
         shipInfo.currentMoney -= wormholeGold;
         wormHoleUsed = true;
         wormHoleChoice.SetActive(false);
