@@ -18,6 +18,14 @@ namespace GameJam
         [SerializeField] private GameObject Button3;
         [SerializeField] private GameObject Button4;
 
+        [SerializeField] private AudioSource MainAudio;
+
+        private void Start()
+        {
+            MainAudio.Play();
+        }
+
+
         public enum PlayerUI
         {
             Activate,

@@ -21,7 +21,7 @@ namespace GameJam
 
         public TurnState currentState;
 
-        [SerializeField] private Slider hpSlider;
+       
         [SerializeField] private TMP_Text hpText;
         [SerializeField] private Canvas healthCanvas;
         [SerializeField] internal float currentCooldown = 0f;
@@ -37,6 +37,9 @@ namespace GameJam
         [SerializeField] GameObject MachineGunObj;
         private GameObject currentAttackObj;
 
+        private int currentPower;
+        public GameObject ProjectileFinalPos;
+
         private bool ProjectileInbound;
         private bool _isDead = false;
 
@@ -47,7 +50,7 @@ namespace GameJam
             healthCanvas.worldCamera = GameObject.FindGameObjectWithTag("PlayerCamera").GetComponent<Camera>();
             shipbattle = GameObject.Find("BattleManager").GetComponent<ShipBattleStateMachine>();
             hpText.text = $"{enemySO.currentHP} HP";
-
+            ProjectileFinalPos = GameObject.Find("ProjectilePos");
 
         }
         
@@ -90,13 +93,35 @@ namespace GameJam
                 {
                    
 
-                    currentAttackObj.transform.position = Vector3.MoveTowards(currentAttackObj.transform.position, player.transform.position, 10f * Time.deltaTime);
+                    currentAttackObj.transform.position = Vector3.MoveTowards(currentAttackObj.transform.position, ProjectileFinalPos.transform.position, 20f * Time.deltaTime);
 
-                    if(currentAttackObj.transform.position == player.transform.position)
+                    if(currentAttackObj.transform.position == ProjectileFinalPos.transform.position)
                     {
-                        Destroy(currentAttackObj);
-                        ProjectileInbound = false; 
+                        if(currentPower == 1)
+                        {
+                            player.TakeMachineGunDamage(enemySO.machinegunfirepower);
+                            Destroy(currentAttackObj);
+                            player.CameraShakeEffect();
+                            ProjectileInbound = false;
+                        }
+                        if(currentPower == 2)
+                        {
+                            player.TakeRocketDamage(enemySO.rocketfirepower);
+                            Destroy(currentAttackObj);
+                            player.CameraShakeEffect();
+                            ProjectileInbound = false;
+                        }
+                        if(currentPower == 3)
+                        {
+                            player.TakeLaserDamage(enemySO.laserfirepower);
+                            Destroy(currentAttackObj);
+                            player.CameraShakeEffect();
+                            ProjectileInbound = false;
+                        }
+
+                        
                     }
+
 
                 }
             }
@@ -118,7 +143,7 @@ namespace GameJam
             {
                 enemySO.currentHP = enemySO.maxHP;
             }
-            hpSlider.value = (health / enemySO.maxHP) * 100;
+           
             hpText.text = $"{enemySO.currentHP} HP";
 
         }
@@ -171,28 +196,40 @@ namespace GameJam
 
             currentAttackObj = GameObject.Instantiate(MachineGunObj, transform.position, transform.rotation);
             ProjectileInbound = true;
-            player.TakeMachineGunDamage(enemySO.machinegunfirepower);
+            currentPower = 1;
             Debug.Log($"{currentAttackObj.name} IS INBOUND FOR PLAYER");
             currentState = TurnState.Waiting;
 
         }
         public void LaserAttack()
         {
-
-            currentAttackObj = GameObject.Instantiate(LaserObj, transform.position, transform.rotation);
-            ProjectileInbound = true;
-            player.TakeLaserDamage(enemySO.laserfirepower);
-            Debug.Log($"{currentAttackObj.name} IS INBOUND FOR PLAYER");
-            currentState = TurnState.Waiting;
+            if (enemySO.currentLaserAmmo > 0)
+            {
+                currentAttackObj = GameObject.Instantiate(LaserObj, transform.position, transform.rotation);
+                ProjectileInbound = true;
+                currentPower = 2;
+                Debug.Log($"{currentAttackObj.name} IS INBOUND FOR PLAYER");
+                currentState = TurnState.Waiting;
+            }
+            else
+            {
+                MachineGunAttack();
+            }
         }
         public void RocketAttack()
         {
-
-            currentAttackObj = GameObject.Instantiate(RocketObj, transform.position, transform.rotation);
-            ProjectileInbound = true;
-            player.TakeRocketDamage(enemySO.rocketfirepower);
-            Debug.Log($"{currentAttackObj.name} IS INBOUND FOR PLAYER");
-            currentState = TurnState.Waiting;
+            if (enemySO.currentRocketAmmo > 0)
+            {
+                currentAttackObj = GameObject.Instantiate(RocketObj, transform.position, transform.rotation);
+                ProjectileInbound = true;
+                currentPower = 3;
+                Debug.Log($"{currentAttackObj.name} IS INBOUND FOR PLAYER");
+                currentState = TurnState.Waiting;
+            }
+            else
+            {
+                MachineGunAttack();
+            }
         }
 
        public void TakeMachineGunDamage(float damage)

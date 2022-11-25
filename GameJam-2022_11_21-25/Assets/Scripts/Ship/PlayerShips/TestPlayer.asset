@@ -18,9 +18,9 @@ MonoBehaviour:
   maxFuel: 10
   _currentFuel: 10
   maxRocketAmmo: 10
-  _currentRocketAmmo: -2
+  _currentRocketAmmo: 1
   maxLaserAmmo: 10
-  _currentLaserAmmo: 0
+  _currentLaserAmmo: 1
   maxMoney: 100
   _currentMoney: 50
   crewSpeed: 10

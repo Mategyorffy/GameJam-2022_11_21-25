@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Enemy
   maxHP: 100
-  _currentHP: 100
+  _currentHP: 50
   maxFuel: 10
   _currentFuel: 10
   maxRocketAmmo: 10

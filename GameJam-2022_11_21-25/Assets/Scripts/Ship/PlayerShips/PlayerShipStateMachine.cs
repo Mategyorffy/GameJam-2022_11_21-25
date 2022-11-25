@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 namespace GameJam
 {
     public class PlayerShipStateMachine : MonoBehaviour
@@ -19,7 +20,7 @@ namespace GameJam
             Dead
         }
 
-
+        
         public TurnState currentState;
 
         [SerializeField] internal float currentCooldown = 0f;
@@ -41,15 +42,28 @@ namespace GameJam
         [SerializeField] private GameObject RocketButton;
         public bool buttonPressable = false;
 
+        [SerializeField] Animator _cameraAnimatior;
+
         public EnemyShipStateMachine enemyToAttack;
         int currentPower;
+
+        [SerializeField] private AudioSource NotifySoundSource;
+        [SerializeField] private AudioSource MainAudioSource;
+        [SerializeField] private AudioSource ExplosionAudioSource;
+        [SerializeField] private AudioClip energyDown;
+        [SerializeField] private AudioClip energyUp;
+        [SerializeField] private AudioClip HpLow;
+        [SerializeField] private AudioClip Explosion1;
+        [SerializeField] private AudioClip Explosion2;
+        
 
 
         private void Start()
         {
             hpSlider.value = playerSO.currentHP;
             shipBattle = GameObject.Find("BattleManager").GetComponent<ShipBattleStateMachine>();
-            
+            NotifySoundSource.clip = energyDown;
+            NotifySoundSource.Play();
             playerSO.OnPlayerHealthChange += PlayerHPChange;
             playerSO.OnLaserChange += UpdateLaserAmmoAmount;
             playerSO.OnRocketChange += UpdateRocketAmmoAmount;
@@ -69,6 +83,10 @@ namespace GameJam
             if (playerSO.currentHP < 0)
             {
                 playerSO.currentHP = 0;
+            }
+            if(playerSO.currentHP <= 50)
+            {
+                PlayLowHpSound();
             }
             else if (playerSO.currentHP > playerSO.maxHP)
             {
@@ -98,6 +116,7 @@ namespace GameJam
                     FireWeaponAtCurrentTarget(currentPower);
                     break;
             }
+         
 
         }
 
@@ -112,8 +131,15 @@ namespace GameJam
             {
                 UpdateLaserAmmoAmount(playerSO.currentLaserAmmo);
                 UpdateRocketAmmoAmount(playerSO.currentRocketAmmo);
+                NotifySoundSource.clip = energyUp;
+                NotifySoundSource.Play();
                 currentState = TurnState.ButtonsLightUp;
             }
+        }
+        public void PlayLowHpSound()
+        {
+            MainAudioSource.clip = HpLow;
+            MainAudioSource.Play();
         }
         void UpdateLaserAmmoAmount(int ammount)
         {
@@ -193,6 +219,7 @@ namespace GameJam
                 laserButtonImage.color = Color.gray;
                 reloadText.text = "Reloading..";
                 currentState = TurnState.Waiting;
+             
 
             }
             else
@@ -230,6 +257,25 @@ namespace GameJam
                 {
                     return;
                 }
+            }
+
+        }
+        public void CameraShakeEffect()
+        {
+            _cameraAnimatior.SetTrigger("TiggerCameraShake");
+            int randomInt = Random.Range(0, 1);
+
+            switch (randomInt)
+            {
+                case 0:
+                    ExplosionAudioSource.clip = Explosion1;
+                    ExplosionAudioSource.Play();
+                    break;
+                case 1:
+                    ExplosionAudioSource.clip = Explosion2;
+                    ExplosionAudioSource.Play();
+                    break;
+                
             }
 
         }
@@ -271,14 +317,17 @@ namespace GameJam
         public void TakeMachineGunDamage(float Power)
         {
             playerSO.currentHP = playerSO.currentHP - Power;
+            
         }
         public void TakeLaserDamage(float Power)
         {
             playerSO.currentHP = playerSO.currentHP - Power;
+            
         }
         public void TakeRocketDamage(float power)
         {
             playerSO.currentHP = playerSO.currentHP - power;
+            
         }
 
     }
