@@ -32,6 +32,7 @@ namespace GameJam
             shipCurrent.energyPower = shipStart.energyPower;
             shipCurrent.hullStrength = shipStart.hullStrength;
             shipCurrent.barrierStrength = shipStart.barrierStrength;
+            shipCurrent.currentMoney = shipStart.currentMoney;
             shipCurrent.deadShip = false;
             Debug.Log("Reset complete!");
         }

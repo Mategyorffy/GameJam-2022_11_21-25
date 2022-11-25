@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1890caa5196a3c4499de012d589b2085, type: 3}
-  m_Name: TestPlayer
+  m_Name: StartingPlayer
   m_EditorClassIdentifier: 
-  name: TEST
+  name: Player
   maxHP: 10
   _currentHP: 10
   maxFuel: 10
@@ -20,14 +20,14 @@ MonoBehaviour:
   maxRocketAmmo: 10
   _currentRocketAmmo: 10
   maxLaserAmmo: 10
-  _currentLaserAmmo: 5
+  _currentLaserAmmo: 10
   maxMoney: 100
   _currentMoney: 50
   crewSpeed: 10
-  firepower: 1
+  machinegunfirepower: 0
+  rocketfirepower: 0
+  laserfirepower: 0
   energyPower: 1
   hullStrength: 1
   barrierStrength: 1
-  machineGunMoveList: []
-  specialGunsMoveList: []
   deadShip: 0
