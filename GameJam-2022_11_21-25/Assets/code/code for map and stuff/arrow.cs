@@ -3,51 +3,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class arrow : MonoBehaviour
+namespace GameJam
 {
 
-    [SerializeField] GameObject nextPlanet;
-    [SerializeField] ship spaceShip;
-    [SerializeField] planet planetscript;
-    [SerializeField] CharacterStat shipFuel;
-
-    public Sprite arrowOff;
-    public Sprite arrowOn;
-
-
-    
-    void Start()
+    public class arrow : MonoBehaviour
     {
-        gameObject.GetComponent<Renderer>().enabled = false;
-        gameObject.GetComponent<Collider2D>().enabled = false;
-    }
+
+        [SerializeField] GameObject nextPlanet;
+        [SerializeField] ship spaceShip;
+        [SerializeField] planet planetscript;
+        [SerializeField] CharacterStat shipFuel;
+
+        public Sprite arrowOff;
+        public Sprite arrowOn;
 
 
-    private void OnMouseDown()
-    {
-        if (Store.wasShopOpened)
+
+        void Start()
         {
-            return;
+            gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.GetComponent<Collider2D>().enabled = false;
         }
-        planetscript.isPlayerHere = false;
 
-        spaceShip.startPosition = spaceShip.transform.position;
-        spaceShip.nextDestination = nextPlanet.transform.position;
 
-        StartCoroutine(spaceShip.Lerp());
-        shipFuel.currentFuel--;
+        private void OnMouseDown()
+        {
+            if (Store.wasShopOpened)
+            {
+                return;
+            }
+            planetscript.isPlayerHere = false;
+
+            spaceShip.startPosition = spaceShip.transform.position;
+            spaceShip.nextDestination = nextPlanet.transform.position;
+
+            StartCoroutine(spaceShip.Lerp());
+            shipFuel.currentFuel--;
+        }
+
+
+        private void OnMouseOver()
+        {
+            GetComponent<SpriteRenderer>().sprite = arrowOn;
+        }
+
+        private void OnMouseExit()
+        {
+            GetComponent<SpriteRenderer>().sprite = arrowOff;
+        }
+
+
     }
-
-
-    private void OnMouseOver()
-    {
-        GetComponent<SpriteRenderer>().sprite = arrowOn;
-    }
-
-    private void OnMouseExit()
-    {
-        GetComponent<SpriteRenderer>().sprite = arrowOff;
-    }
-
-
 }
