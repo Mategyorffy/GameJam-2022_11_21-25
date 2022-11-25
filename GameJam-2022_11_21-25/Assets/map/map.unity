@@ -216,6 +216,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1430404347}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 590725746}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &5984396
@@ -611,6 +612,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 590725743}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1207843004}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &18584621
@@ -989,7 +991,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -1097,6 +1098,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1534473346}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1741494426}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &57448083
@@ -1458,6 +1460,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 183088100}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1732167242}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &75334430
@@ -1859,6 +1862,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1207843001}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1413190359}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &102835292
@@ -2220,6 +2224,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1207843001}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 820485133}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &106888693
@@ -2598,7 +2603,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -2691,6 +2695,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1534473346}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 740200017}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &114696230
@@ -3084,7 +3089,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -3192,6 +3196,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 795548590}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2050239775}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &150715214
@@ -3553,6 +3558,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2077618535}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 923460816}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &180474030
@@ -3931,7 +3937,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 1
   finalBoss: 0
@@ -4074,6 +4079,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 143124509}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 36752309}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &206047800
@@ -4435,6 +4441,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1517667218}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 795548593}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &224198084
@@ -4813,7 +4820,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -4938,7 +4944,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 1
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -5046,6 +5051,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 590725743}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1719046345}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &235172883
@@ -5407,6 +5413,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1204137444}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 108933649}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &246179226
@@ -5768,6 +5775,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1204137444}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1839844491}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &254079443
@@ -6464,6 +6472,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1732167239}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1155519725}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &296107963
@@ -6825,6 +6834,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1739693429}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 375693583}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &301737640
@@ -7186,6 +7196,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 375693580}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1517667221}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &305933796
@@ -7547,6 +7558,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1128490103}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1001968988}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &306414341
@@ -8006,6 +8018,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 923460813}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1997244943}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &313282435
@@ -8367,6 +8380,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1773499268}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1719046345}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &334967348
@@ -8728,6 +8742,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 183088100}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2099454357}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &340356046
@@ -9089,6 +9104,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 183088100}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 234807444}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &346557351
@@ -9504,7 +9520,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -9644,6 +9659,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1128490103}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1669363077}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &369317359
@@ -10022,7 +10038,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 1
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -10171,6 +10186,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1207843001}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 625147465}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &379519060
@@ -10532,6 +10548,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 923460813}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1669363077}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &392333844
@@ -10854,6 +10871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 421932593}
   - component: {fileID: 421932592}
+  - component: {fileID: 421932594}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -10910,6 +10928,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &421932594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421932591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0939a6b5898b24daa70c5fbf474c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 0}
 --- !u!1 &425309667
 GameObject:
   m_ObjectHideFlags: 0
@@ -10959,6 +10990,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2099454354}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1570138005}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &425309671
@@ -11393,6 +11425,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1153889190}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1534473349}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &476739135
@@ -11754,6 +11787,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 699165568}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 771202952}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &488927221
@@ -12115,6 +12149,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1153889190}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1517667221}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &489740319
@@ -12476,6 +12511,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 625147462}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 365751427}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &518809482
@@ -12910,7 +12946,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 1
@@ -12966,6 +13001,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1732167239}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1739693432}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &537232621
@@ -13371,6 +13407,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 667848881}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 699165571}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &553105782
@@ -13749,7 +13786,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -13857,6 +13893,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 36752306}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 555288100}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &563217449
@@ -14235,7 +14272,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -14343,6 +14379,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 555288097}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1773499271}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &608920999
@@ -14704,6 +14741,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1065948821}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2099454357}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &610603717
@@ -15082,7 +15120,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -15190,6 +15227,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1517667218}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1534473349}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &636795611
@@ -15568,7 +15606,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -15676,6 +15713,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1997244940}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1065948824}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &662439339
@@ -16054,7 +16092,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -16162,6 +16199,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 234807441}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1773499271}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &672126587
@@ -16523,6 +16561,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 820485130}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1413190359}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &680906525
@@ -16884,6 +16923,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 143124509}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 923460816}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &681554410
@@ -17230,6 +17270,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1987054570}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1874645475}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &690152712
@@ -17606,6 +17647,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 36752306}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1703935384}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &697961668
@@ -17984,7 +18026,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 1
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -18092,6 +18133,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1155519722}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 590725746}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &704913349
@@ -18453,6 +18495,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1208269129}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1207843004}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &735527052
@@ -18801,7 +18844,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -18953,6 +18995,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1208269129}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 820485133}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &748241146
@@ -19331,7 +19374,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -19474,6 +19516,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1669363074}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1065948824}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &774611287
@@ -19820,6 +19863,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1703935381}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 183088103}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &786359518
@@ -20248,7 +20292,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -20373,7 +20416,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -20481,6 +20523,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2099454354}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1839844491}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &870770055
@@ -20842,6 +20885,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1413190356}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 667848884}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &884180590
@@ -21260,7 +21304,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -21466,6 +21509,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1570138002}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 650181935}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &937217753
@@ -21778,6 +21822,134 @@ PolygonCollider2D:
       - {x: -3.1353745, y: -6.704365}
       - {x: -3.1487164, y: -6.6376543}
       - {x: -2.9886122, y: -6.6376543}
+--- !u!1 &942686609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942686611}
+  - component: {fileID: 942686610}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &942686610
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942686609}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ad403fe5cb1141c4db962f01954ad170, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &942686611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942686609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 409.83847, y: 367.67554, z: -0.9323304}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &950191349
 GameObject:
   m_ObjectHideFlags: 0
@@ -21895,6 +22067,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1839844488}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1570138005}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &958561020
@@ -22256,6 +22429,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1065948821}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1204137447}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &976592534
@@ -22602,6 +22776,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1741494423}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 740200017}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &977329714
@@ -23030,7 +23205,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -23123,6 +23297,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 771202949}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1874645475}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1027563469
@@ -23499,6 +23674,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1739693429}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1208269132}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1034695866
@@ -23911,7 +24087,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -24019,6 +24194,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 234807441}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1732167242}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1120062259
@@ -24397,7 +24573,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -24505,6 +24680,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1413190356}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 795548593}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1141619766
@@ -24866,6 +25042,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 521249450}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1128490106}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1141867606
@@ -25244,7 +25421,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -25369,7 +25545,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -25494,7 +25669,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -25602,6 +25776,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 923460813}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1703935384}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1206507241
@@ -25980,7 +26155,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 1
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -26105,7 +26279,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -26307,6 +26480,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 667848881}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 795548593}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1226708785
@@ -26653,6 +26827,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 225836959}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1987054573}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1244386399
@@ -27029,6 +27204,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 521249450}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 143124512}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1288622950
@@ -27410,6 +27586,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1997244940}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 183088103}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1312450962
@@ -27771,6 +27948,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 923460813}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 183088103}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1319039341
@@ -28239,6 +28417,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1839844488}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 108933649}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1383723759
@@ -28600,6 +28779,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1773499268}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1430404350}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1410114501
@@ -28978,7 +29158,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -29086,6 +29265,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1719046342}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 625147465}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1427125197
@@ -29464,7 +29644,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -29572,6 +29751,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1430404347}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1155519725}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1440031776
@@ -29933,6 +30113,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1534473346}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 225836962}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1452820225
@@ -30311,7 +30492,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -30419,6 +30599,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 555288097}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 234807444}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1521719640
@@ -30831,7 +31012,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 1
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -30994,7 +31174,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -31087,6 +31266,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2077618535}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 143124512}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1575799112
@@ -31463,6 +31643,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1001968985}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1065948824}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1586283618
@@ -31824,6 +32005,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1669363074}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1997244943}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1593441976
@@ -32225,6 +32407,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1208269129}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 375693583}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1614605867
@@ -32586,6 +32769,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1997244940}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2099454357}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1630586467
@@ -32947,6 +33131,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 521249450}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2077618538}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1645793070
@@ -33330,7 +33515,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -33438,6 +33622,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1719046342}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1207843004}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1676222608
@@ -33799,6 +33984,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1517667218}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 225836962}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1681936932
@@ -34244,6 +34430,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1001968985}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1204137447}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1702733097
@@ -34622,7 +34809,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -34730,6 +34916,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1739693429}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1570138005}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1708169349
@@ -35108,7 +35295,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -35216,6 +35402,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1065948821}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1839844491}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1730792295
@@ -35594,7 +35781,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -35702,6 +35888,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1732167239}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1208269132}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1739192287
@@ -36080,7 +36267,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -36188,6 +36374,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2099454354}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1732167242}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1741103055
@@ -36566,7 +36753,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 1
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -36674,6 +36860,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 667848881}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2050239775}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1748716075
@@ -37052,7 +37239,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -37145,6 +37331,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2050239772}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1987054573}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1779090437
@@ -37521,6 +37708,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1128490103}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 923460816}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1779275801
@@ -37916,6 +38104,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1703935381}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 555288100}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1790877197
@@ -38277,6 +38466,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1703935381}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 234807444}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1806765327
@@ -38658,6 +38848,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2077618535}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1128490106}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1821190351
@@ -39051,7 +39242,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -39159,6 +39349,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 625147462}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 667848884}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1842092698
@@ -39506,7 +39697,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -39645,6 +39835,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 365751424}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 699165571}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1874979898
@@ -40006,6 +40197,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 699165568}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2050239775}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1877197087
@@ -40367,6 +40559,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 108933646}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1153889193}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1881935959
@@ -40728,6 +40921,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1153889190}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1741494426}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1882998089
@@ -41089,6 +41283,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 375693580}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 820485133}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1912484756
@@ -41471,6 +41666,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2099454354}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1739693432}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1935261467
@@ -41842,6 +42038,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 795548590}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1987054573}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1951299270
@@ -42218,6 +42415,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1207843001}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 667848884}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1982326584
@@ -42596,7 +42794,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 1
   wormHole: 0
   finalBoss: 0
@@ -42704,6 +42901,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 650181932}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 375693583}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &1996769953
@@ -43082,7 +43280,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -43190,6 +43387,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 375693580}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1153889193}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &2011600226
@@ -43585,6 +43783,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 795548590}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 225836962}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &2036418651
@@ -43963,7 +44162,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 1
   asteroid: 0
-  shopPlanet: 0
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -44071,6 +44269,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 108933646}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 650181935}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &2051462491
@@ -44461,6 +44660,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 2050239772}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 771202952}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &2069294313
@@ -44837,6 +45037,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 1155519722}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1208269132}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &2076627511
@@ -45215,7 +45416,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 1
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -45323,6 +45523,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 375693580}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1413190359}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &2085568445
@@ -45684,6 +45885,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 740200016}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1874645475}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &2090752974
@@ -46062,7 +46264,6 @@ MonoBehaviour:
   playerWasHere: 0
   safePlanet: 0
   asteroid: 0
-  shopPlanet: 1
   enemyPlanet: 0
   wormHole: 0
   finalBoss: 0
@@ -46170,6 +46371,7 @@ MonoBehaviour:
   nextPlanet: {fileID: 234807441}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1430404350}
+  shipFuel: {fileID: 0}
   arrowOff: {fileID: 21300000, guid: 4481ebea2f43ec04489a5967c3dc716b, type: 3}
   arrowOn: {fileID: 21300000, guid: aecb94fccfb20bb439c8e12fa2ccd1cb, type: 3}
 --- !u!212 &2102860020
