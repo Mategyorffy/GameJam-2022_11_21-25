@@ -4012,7 +4012,7 @@ MonoBehaviour:
   finalPlanet: 0
   wormHoleUsed: 0
   startPlanet: {fileID: 0}
-  shipship: {fileID: 288670377}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1312450959}
   prArrow2: {fileID: 1319039338}
   prArrow3: {fileID: 786359515}
@@ -4020,7 +4020,7 @@ MonoBehaviour:
   safePlanetGold: 0
   asteroidChance: 0
   shipInfo: {fileID: 0}
-  startingPlanet: {fileID: 1874645474}
+  startingPlanet: {fileID: 0}
   wormholeGold: 0
   wormHoleChoice: {fileID: 0}
 --- !u!212 &183088104
@@ -6403,13 +6403,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288670374}
   m_LocalRotation: {x: -0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -12.81, y: 0.16, z: 0}
+  m_LocalPosition: {x: -13.031349, y: 0.31651872, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1696345275}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &288670377
 MonoBehaviour:
@@ -12965,6 +12965,144 @@ PolygonCollider2D:
       - {x: -3.1353745, y: -6.704365}
       - {x: -3.1487164, y: -6.6376543}
       - {x: -2.9886122, y: -6.6376543}
+--- !u!1001 &521249449
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 191634, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_Name
+      value: boss final
+      objectReference: {fileID: 0}
+    - target: {fileID: 417102, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 417102, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 417102, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8145768
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.35137555
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.45919034
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0463049
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -32
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 499964, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370282, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+--- !u!1 &521249450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 191634, guid: 32303dc3554fcfc419798a1f0235187f, type: 3}
+  m_PrefabInstance: {fileID: 521249449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &521249451
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521249450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.11706291, y: -0.07543515}
+  serializedVersion: 2
+  m_Radius: 1.253798
+--- !u!114 &521249452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521249450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057a4af49f2bed847bd321fba5172732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayerHere: 0
+  playerWasHere: 0
+  safePlanet: 0
+  asteroid: 0
+  enemyPlanet: 0
+  wormHole: 0
+  finalPlanet: 0
+  wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
+  prArrow1: {fileID: 0}
+  prArrow2: {fileID: 0}
+  prArrow3: {fileID: 0}
+  information: {fileID: 0}
+  safePlanetGold: 0
+  asteroidChance: 0
+  shipInfo: {fileID: 0}
+  startingPlanet: {fileID: 0}
+  wormholeGold: 0
+  wormHoleChoice: {fileID: 0}
 --- !u!1 &537232617
 GameObject:
   m_ObjectHideFlags: 0
@@ -15793,140 +15931,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &656739733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 656739737}
-  - component: {fileID: 656739736}
-  - component: {fileID: 656739735}
-  - component: {fileID: 656739734}
-  m_Layer: 0
-  m_Name: final planet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!58 &656739734
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656739733}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.9, y: 0.9}
-  serializedVersion: 2
-  m_Radius: 0.8
---- !u!114 &656739735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656739733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 057a4af49f2bed847bd321fba5172732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayerHere: 0
-  playerWasHere: 0
-  safePlanet: 0
-  asteroid: 0
-  enemyPlanet: 0
-  wormHole: 0
-  finalPlanet: 1
-  wormHoleUsed: 0
-  startPlanet: {fileID: 0}
-  shipship: {fileID: 0}
-  prArrow1: {fileID: 0}
-  prArrow2: {fileID: 0}
-  prArrow3: {fileID: 0}
-  information: {fileID: 256272912}
-  safePlanetGold: 0
-  asteroidChance: 0
-  shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
-  startingPlanet: {fileID: 1874645474}
-  wormholeGold: 0
-  wormHoleChoice: {fileID: 1858029025}
---- !u!212 &656739736
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656739733}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 11145b93d06f03b448ba3990f8da9c8e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &656739737
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656739733}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.05, y: 1.25, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662439335
 GameObject:
   m_ObjectHideFlags: 0
@@ -25639,7 +25643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bd5e2fb3f396943a8bff87abc946e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlanet: {fileID: 0}
+  nextPlanet: {fileID: 521249450}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1128490106}
   shipFuel: {fileID: 0}
@@ -27927,7 +27931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bd5e2fb3f396943a8bff87abc946e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlanet: {fileID: 0}
+  nextPlanet: {fileID: 521249450}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 143124512}
   shipFuel: {fileID: 0}
@@ -34274,7 +34278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bd5e2fb3f396943a8bff87abc946e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlanet: {fileID: 0}
+  nextPlanet: {fileID: 521249450}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2077618538}
   shipFuel: {fileID: 0}
@@ -48925,7 +48929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2436559612976912958, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2875897423246033076, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
       propertyPath: m_text

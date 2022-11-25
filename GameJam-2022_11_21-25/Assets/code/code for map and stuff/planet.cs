@@ -6,178 +6,158 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace GameJam
+public class planet : MonoBehaviour
 {
 
-    public class planet : MonoBehaviour
+    public bool isPlayerHere = false;
+    public bool playerWasHere = false;
+
+    [SerializeField] private bool safePlanet;
+    [SerializeField] private bool asteroid;
+    [SerializeField] private bool enemyPlanet;
+    [SerializeField] private bool wormHole;
+    [SerializeField] private bool finalPlanet;
+    [SerializeField] private bool wormHoleUsed;
+
+
+    [SerializeField] GameObject startPlanet; 
+    [SerializeField] ship shipship; 
+
+    [SerializeField] GameObject prArrow1; //possibleRoute
+    [SerializeField] GameObject prArrow2; //possibleRoute
+    [SerializeField] GameObject prArrow3; //possibleRoute
+
+    [SerializeField] private TextMeshProUGUI information;
+    [SerializeField] private int safePlanetGold;
+    [SerializeField] private int asteroidChance;
+    [SerializeField] CharacterStat shipInfo;
+    [SerializeField] private GameObject startingPlanet;
+    [SerializeField] private int wormholeGold;
+    [SerializeField] private GameObject wormHoleChoice;
+    private Color customGrayColor;
+
+
+    private void Start()
+    {
+        shipInfo = GameObject.Find("Manager").GetComponent<CharacterStat>();
+        customGrayColor = new Color(0.70f, 0.70f, 0.70f, 1.0f);
+        safePlanetGold = 100;
+    }
+
+    void Update()
     {
 
-        public bool isPlayerHere = false;
-        public bool playerWasHere = false;
-
-        [SerializeField] private bool safePlanet;
-        [SerializeField] private bool asteroid;
-        [SerializeField] private bool enemyPlanet;
-        [SerializeField] private bool wormHole;
-        [SerializeField] private bool finalPlanet;
-        [SerializeField] private bool wormHoleUsed;
-
-
-        [SerializeField] GameObject startPlanet;
-        [SerializeField] ship shipship;
-
-        [SerializeField] GameObject prArrow1; //possibleRoute
-        [SerializeField] GameObject prArrow2; //possibleRoute
-        [SerializeField] GameObject prArrow3; //possibleRoute
-
-        [SerializeField] private TextMeshProUGUI information;
-        [SerializeField] private int safePlanetGold;
-        [SerializeField] private int asteroidChance;
-        [SerializeField] CharacterStat shipInfo;
-        [SerializeField] private GameObject startingPlanet;
-        [SerializeField] private int wormholeGold;
-        [SerializeField] private GameObject wormHoleChoice;
-
-        private Color customGrayColor;
-
-
-        private void Start()
+        if (isPlayerHere == true)
         {
-            customGrayColor = new Color(0.70f, 0.70f, 0.70f, 1);
-            shipInfo = GameObject.Find("Manager").GetComponent<CharacterStat>();
+            prArrow1.gameObject.GetComponent<Renderer>().enabled = true;
+            prArrow1.gameObject.GetComponent<Collider2D>().enabled = true;
 
+            prArrow2.gameObject.GetComponent<Renderer>().enabled = true;
+            prArrow2.gameObject.GetComponent<Collider2D>().enabled = true;
 
-            safePlanetGold = 100;
+            prArrow3.gameObject.GetComponent<Renderer>().enabled = true;
+            prArrow3.gameObject.GetComponent<Collider2D>().enabled = true;
+        }
+        else
+        {
+            prArrow1.gameObject.GetComponent<Renderer>().enabled = false;
+            prArrow1.gameObject.GetComponent<Collider2D>().enabled = false;
+
+            prArrow2.gameObject.GetComponent<Renderer>().enabled = false;
+            prArrow2.gameObject.GetComponent<Collider2D>().enabled = false;
+
+            prArrow3.gameObject.GetComponent<Renderer>().enabled = false;
+            prArrow3.gameObject.GetComponent<Collider2D>().enabled = false;
         }
 
-        void Update()
-        {
+    }
 
-            if (isPlayerHere == true)
-            {
-                prArrow1.gameObject.GetComponent<Renderer>().enabled = true;
-                prArrow1.gameObject.GetComponent<Collider2D>().enabled = true;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        isPlayerHere = true;
 
-                prArrow2.gameObject.GetComponent<Renderer>().enabled = true;
-                prArrow2.gameObject.GetComponent<Collider2D>().enabled = true;
-
-                prArrow3.gameObject.GetComponent<Renderer>().enabled = true;
-                prArrow3.gameObject.GetComponent<Collider2D>().enabled = true;
-            }
-            else
-            {
-                prArrow1.gameObject.GetComponent<Renderer>().enabled = false;
-                prArrow1.gameObject.GetComponent<Collider2D>().enabled = false;
-
-                prArrow2.gameObject.GetComponent<Renderer>().enabled = false;
-                prArrow2.gameObject.GetComponent<Collider2D>().enabled = false;
-
-                prArrow3.gameObject.GetComponent<Renderer>().enabled = false;
-                prArrow3.gameObject.GetComponent<Collider2D>().enabled = false;
-            }
-
-<<<<<<< Updated upstream
         if (safePlanet)
         {
             information.text = "Everything seems fine here we even found some gold!";
             shipInfo.currentMoney += 100;
-=======
->>>>>>> Stashed changes
         }
-
-        private void OnTriggerEnter2D(Collider2D collision)
+        if (asteroid)
         {
-            isPlayerHere = true;
-
-            if (safePlanet)
+            asteroidChance = Random.Range(0, 100);
+            switch (asteroidChance) 
             {
-                information.text = "Everything seems fine here we even found " + safePlanetGold + " gold!";
-            }
-            if (asteroid)
-            {
-                asteroidChance = Random.Range(0, 100);
-                switch (asteroidChance)
-                {
-                    case < 50:
-                        shipInfo.currentHP -= 25f;
-                        information.text = "Captain, the asteroid was loaded with explosives!";
-                        break;
-                    case >= 50:
-                        shipInfo.currentMoney += 150;
-                        information.text = "We're quite lucky Captain, there was gold in that asteroid.";
-                        break;
-                }
-            }
-            if (enemyPlanet)
-            {
-                StartCoroutine(EnemyEncounter());
-            }
-            if (wormHole)
-            {
-                if (wormHoleUsed)
-                {
-                    information.text = "It seems out of order Captain....we must push on.";
-                    return;
-                }
-                information.text = "This takes us back to the station Captain...but for a price \n Use Wormhole for " + wormholeGold + "?";
-                wormHoleChoice.SetActive(true);
-            }
-            if (finalPlanet)
-            {
-                StartCoroutine(FinalScene());
+                case < 50:
+                    shipInfo.currentHP -= 25f;
+                    information.text = "Captain, the asteroid was loaded with explosives!";
+                    break;
+                case >= 50:
+                    shipInfo.currentMoney += 150;
+                    information.text = "We're quite lucky Captain, there was gold in that asteroid.";
+                    break;
             }
         }
-
-        public void WormHoleYes()
+        if (enemyPlanet)
         {
-            //move it here!
-
-            shipship.startPosition = shipship.transform.position;
-            shipship.nextDestination = startPlanet.transform.position;
-
-            StartCoroutine(shipship.Lerp());
-
-
-            shipInfo.currentMoney -= wormholeGold;
-            wormHoleUsed = true;
-            wormHoleChoice.SetActive(false);
-
+            StartCoroutine(EnemyEncounter());
         }
-
-        public void WormHoleNo()
+        if (wormHole)
         {
-            information.text = "Very well Captain, keep moving forward!";
-            wormHoleChoice.SetActive(false);
+            if (wormHoleUsed)
+            {
+                information.text = "It seems out of order Captain....we must push on.";
+                return;
+            }
+            information.text = "This takes us back to the station Captain...but for a price \n Use Wormhole for " + wormholeGold + "?";
+            wormHoleChoice.SetActive(true);
         }
-
-        private void OnTriggerExit2D(Collider2D collision)
+        if (finalPlanet)
         {
-            GetComponent<SpriteRenderer>().material.color = customGrayColor;
-            playerWasHere = true;
+            StartCoroutine(FinalScene());
         }
+    }
 
-        public IEnumerator EnemyEncounter()
-        {
+    public void WormHoleYes()
+    {
+        //move it here!
 
-<<<<<<< Updated upstream
+        shipship.startPosition = shipship.transform.position;
+        shipship.nextDestination = startPlanet.transform.position;
+
+        StartCoroutine(shipship.Lerp());
+
+
+        shipInfo.currentMoney -= wormholeGold;
+        wormHoleUsed = true;
+        wormHoleChoice.SetActive(false);
+        
+    }
+
+    public void WormHoleNo()
+    {
+        information.text = "Very well Captain, keep moving forward!";
+        wormHoleChoice.SetActive(false);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        playerWasHere = true;
+        GetComponent<SpriteRenderer>().material.color = customGrayColor;
+    }
+
+    public IEnumerator EnemyEncounter()
+    {
+
         information.text = "Enemy detected Battle stations!";
         yield return new WaitForSeconds(3);
         SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
     }
-=======
-            information.text = "Enemy detected Battle stations!";
-            yield return new WaitForSeconds(3);
-            SceneManager.LoadSceneAsync(2);
-        }
->>>>>>> Stashed changes
 
-        public IEnumerator FinalScene()
-        {
-            information.text = "Captain we seem to have reached the end, the enemies have retreated!";
-            yield return new WaitForSeconds(3);
-            information.text = "Thanks for playing!";
-            yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(0);
-        }
+    public IEnumerator FinalScene()
+    {
+        information.text = "Captain we seem to have reached the end, the enemies have retreated!";
+        yield return new WaitForSeconds(3);
+        information.text = "Thanks for playing!";
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(0);
     }
 }
