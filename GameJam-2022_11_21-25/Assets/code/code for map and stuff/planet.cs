@@ -20,6 +20,9 @@ public class planet : MonoBehaviour
     [SerializeField] private bool wormHoleUsed;
 
 
+    [SerializeField] GameObject startPlanet; 
+    [SerializeField] ship shipship; 
+
     [SerializeField] GameObject prArrow1; //possibleRoute
     [SerializeField] GameObject prArrow2; //possibleRoute
     [SerializeField] GameObject prArrow3; //possibleRoute
@@ -115,6 +118,13 @@ public class planet : MonoBehaviour
     public void WormHoleYes()
     {
         //move it here!
+
+        shipship.startPosition = shipship.transform.position;
+        shipship.nextDestination = startPlanet.transform.position;
+
+        StartCoroutine(shipship.Lerp());
+
+
         shipInfo.currentMoney -= wormholeGold;
         wormHoleUsed = true;
         wormHoleChoice.SetActive(false);
