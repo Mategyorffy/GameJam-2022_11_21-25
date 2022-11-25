@@ -9,8 +9,8 @@ public class arrow : MonoBehaviour
     [SerializeField] ship spaceShip;
     [SerializeField] planet planetscript;
 
-    Color arrowOriginalColor = Color.white;
-    Color arrowHoverOverColor = Color.green;
+    public Sprite arrowOff;
+    public Sprite arrowOn;
 
 
     
@@ -34,12 +34,12 @@ public class arrow : MonoBehaviour
 
     private void OnMouseOver()
     {
-        GetComponent<SpriteRenderer>().material.color = arrowHoverOverColor;
+        GetComponent<SpriteRenderer>().sprite = arrowOn;
     }
 
     private void OnMouseExit()
     {
-        GetComponent<SpriteRenderer>().material.color = arrowOriginalColor;
+        GetComponent<SpriteRenderer>().sprite = arrowOff;
     }
 
 
