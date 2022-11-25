@@ -18,15 +18,15 @@ MonoBehaviour:
   maxFuel: 10
   _currentFuel: 10
   maxRocketAmmo: 10
-  _currentRocketAmmo: 6
+  _currentRocketAmmo: -2
   maxLaserAmmo: 10
-  _currentLaserAmmo: 5
+  _currentLaserAmmo: 0
   maxMoney: 100
   _currentMoney: 50
   crewSpeed: 10
-  machinegunfirepower: 0
-  rocketfirepower: 0
-  laserfirepower: 0
+  machinegunfirepower: 50
+  rocketfirepower: 50
+  laserfirepower: 50
   energyPower: 1
   hullStrength: 1
   barrierStrength: 1
