@@ -7,54 +7,168 @@ namespace GameJam
 {
     public class Store : MonoBehaviour
     {
+        //Statice int for upgrade yes button 
+        private static int shopVerify;
+
         //Accesses the ship's stats, gold, ammo and fuel count
         [SerializeField] private CharacterStat shipInventory;
         //Main canvas for all the shops
-        [SerializeField] private GameObject shopsCanvas;
+        [SerializeField] internal GameObject shopsCanvas;
         //Gameobjects in the canvas for each individual shop
         [SerializeField] private GameObject fuelShop;
         [SerializeField] private GameObject repairShop;
         [SerializeField] private GameObject upgradeShop;
+        [SerializeField] private GameObject InformationPanel;
 
         //Cost amounts for shop functions
         [SerializeField] private int fuelCost;
         [SerializeField] private int repairCost;
-
+        [SerializeField] private int singleLaserCost;
+        [SerializeField] private int singleRocketCost;
+        [SerializeField] private int totalLaserCost;
+        [SerializeField] private int totalRocketCost;
 
         //Textbox to display information
-        [SerializeField] private TextMeshPro informationText;
+        [SerializeField] private TextMeshProUGUI informationText;
+        [SerializeField] private TextMeshProUGUI repairText;
+        [SerializeField] private TextMeshProUGUI fuelText;
+
+        //Upgrade choice object
+        [SerializeField] private GameObject upgradeShopChoice;
+
+        //Total cost for a shop ugrade
+        [SerializeField] private int totalGoldCost;
 
         //RNG to see what shop was opened
-        private int shopRoll;
+        internal int shopRoll;
 
         //Used to stop moving while in shop
         public static bool wasShopOpened;
 
         //Used to show if the shop was used/opened to prevent from reopening the shop
-        [SerializeField] private bool wasShopUsed;
+        [SerializeField] internal bool wasShopUsed;
+
+        //Placeholder for buff
+        [SerializeField] private Buff buffHolder;
+
+        //All the buttons
+        [SerializeField] private GameObject buttons;
+
+        //Bools for rocket and laser purchases
+        [SerializeField] private bool rocketPurchase;
+        [SerializeField] private bool laserPurchase;
+
+        private void Start()
+        {
+            informationText.text = "Navigate to the end";   
+        }
 
         public void OnUpgradeBuffButton(Buff buff)
         {
-           int totalGoldCost = buff.goldCost * buff.shopPurchaseAmount;
-            if (shipInventory.currentMoney <= totalGoldCost)
+            totalGoldCost = buff.goldCost * buff.shopPurchaseAmount;
+            if (shipInventory.currentMoney < totalGoldCost)
             {
                 informationText.text = "You don't have enough gold";
                 return;
             }
             else
             {
-                shipInventory.currentMoney -= totalGoldCost;
-                buff.AddGenericUpgrade(shipInventory);
+                informationText.text = buff.shopInfoText;
+                buffHolder = buff;
+                upgradeShopChoice.SetActive(true);
+                buttons.SetActive(false);
 
             }
         }
 
+        public void OnUpgradeYes()
+        {
+            if (laserPurchase)
+            {
+                shipInventory.currentMoney -= totalLaserCost;
+                shipInventory.currentLaserAmmo = shipInventory.maxLaserAmmo;
+                upgradeShopChoice.SetActive(false);
+                buttons.SetActive(true);
+                laserPurchase = false;
+                informationText.text = "Purchase another upgrade?";
+                return;
+            }
+            else if (rocketPurchase)
+            {
+                shipInventory.currentMoney -= totalRocketCost;
+                shipInventory.currentRocketAmmo = shipInventory.maxRocketAmmo;
+                upgradeShopChoice.SetActive(false);
+                buttons.SetActive(true);
+                rocketPurchase = false;
+                informationText.text = "Purchase another upgrade?";
+                return;
+            }
+            shipInventory.currentMoney -= totalGoldCost;
+            buffHolder.AddGenericUpgrade(shipInventory);
+            buffHolder.shopPurchaseAmount++;
+            upgradeShopChoice.SetActive(false);
+            buttons.SetActive(true);
+            informationText.text = "Purchase another upgrade?";
+        }
+
+        public void OnUpgradeNo() 
+        {
+            if (laserPurchase)
+            {
+                laserPurchase = false;
+            }
+            else if (rocketPurchase)
+            {
+                rocketPurchase = false;
+            }
+            upgradeShopChoice.SetActive(false);
+            buttons.SetActive(true);
+            informationText.text = "Changed your mind?";
+        }
+
+        public void OnLaserBuy()
+        {
+            totalLaserCost = (shipInventory.maxLaserAmmo - shipInventory.currentLaserAmmo) * singleLaserCost;
+            if (shipInventory.currentMoney < totalLaserCost)
+            {
+                informationText.text = "You don't have enough gold";
+                return;
+            }
+            if (shipInventory.currentLaserAmmo == shipInventory.maxLaserAmmo)
+            {
+                informationText.text = "You already have all you can hold!";
+                return;
+            }
+            informationText.text = "Refill your missing " + (shipInventory.maxLaserAmmo - shipInventory.currentLaserAmmo) + " lasers \nfor" + totalLaserCost + " gold?";
+            laserPurchase = true;
+            buttons.SetActive(false);
+            upgradeShopChoice.SetActive(true);
+        }
+
+        public void OnRocketBuy() 
+        {
+            totalRocketCost = (shipInventory.maxRocketAmmo - shipInventory.currentRocketAmmo) * singleRocketCost;
+            if (shipInventory.currentMoney < totalRocketCost)
+            {
+                informationText.text = "You don't have enough gold";
+                return;
+            }
+            if (shipInventory.currentRocketAmmo == shipInventory.maxRocketAmmo)
+            {
+                informationText.text = "You already have all you can hold!";
+                return;
+            }
+            informationText.text = "Refill your missing " + (shipInventory.maxRocketAmmo - shipInventory.currentRocketAmmo) + " rockets \nfor" + totalRocketCost + " gold?";
+            rocketPurchase= true;
+            buttons.SetActive(false);
+            upgradeShopChoice.SetActive(true);
+        }
 
         public void OnShopDoneButton()
         { 
             wasShopOpened = false;
             wasShopUsed = true;
-            CloseShops();
+            StartCoroutine(RejectText());
         }
 
         private void Awake()
@@ -86,17 +200,19 @@ namespace GameJam
             }
         }
 
-        private void OpenShop()
+        public void OpenShop()
         {
             switch (shopRoll)
             {
                 case 1:
                     repairShop.SetActive(true);
-                    informationText.text = "Do you want to repair your ship for: " + repairCost + "?";
+                    InformationPanel.SetActive(false);
+                    repairText.text = "Do you want to repair your ship for: " + repairCost + "?";
                     break;
                 case 2:
                     fuelShop.SetActive(true);
-                    informationText.text = "Do you want to refuel your ship for: " + fuelCost + "?";
+                    InformationPanel.SetActive(false);
+                    fuelText.text = "Do you want to refuel your ship for: " + fuelCost + "?";
                     break;
                 case 3:
                     upgradeShop.SetActive(true);
@@ -105,7 +221,7 @@ namespace GameJam
             }
         }
 
-        private void FuelYes()
+        public void FuelYes()
         {
             if (shipInventory.currentMoney >= fuelCost)
             {
@@ -122,12 +238,12 @@ namespace GameJam
             }
         }
 
-        private void FuelNo() 
+        public void FuelNo() 
         {
             StartCoroutine(RejectText());
         }
 
-        private void RepairYes()
+        public void RepairYes()
         {
             if (shipInventory.currentMoney >= repairCost)
             {
@@ -143,7 +259,7 @@ namespace GameJam
             }
         }
 
-        private void RepairNo ()
+        public void RepairNo ()
         {
             StartCoroutine(RejectText());
         }
@@ -153,17 +269,23 @@ namespace GameJam
             yield return new WaitForSeconds(3);
             informationText.text = "Thank you for your purchase";
             wasShopUsed = true;
-            yield return new WaitForSeconds (3);
+            yield return new WaitForSeconds (2);
             CloseShops();
+            informationText.text = "";
+            InformationPanel.SetActive(true);
+
         }
 
         private IEnumerator RejectText() 
         {
             informationText.text = "Thanks for stopping by.";
             wasShopUsed = true;
-            yield return new WaitForSeconds (3);
+            yield return new WaitForSeconds (2);
+            CloseShops();
+            informationText.text = "";
+            InformationPanel.SetActive(true);
         }
-        private void CloseShops()
+        public void CloseShops()
         { 
             fuelShop.SetActive(false);
             repairShop.SetActive(false);

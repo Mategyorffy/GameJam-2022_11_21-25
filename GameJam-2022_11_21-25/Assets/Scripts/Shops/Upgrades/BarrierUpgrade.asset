@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buff: 0
   shopPurchaseAmount: 0
+  shopYesVariable: 0
   goldCost: 0
+  shopInfoText: Barriers helps you take less damage from enemy lasers.

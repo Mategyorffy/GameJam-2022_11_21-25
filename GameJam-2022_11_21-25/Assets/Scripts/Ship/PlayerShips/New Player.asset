@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: New Player
   m_EditorClassIdentifier: 
   name: 
-  maxHP: 0
-  _currentHP: 0
-  maxFuel: 0
-  _currentFuel: 0
+  maxHP: 100
+  _currentHP: 50
+  maxFuel: 100
+  _currentFuel: 50
   maxRocketAmmo: 0
   _currentRocketAmmo: 0
   maxLaserAmmo: 0
   _currentLaserAmmo: 0
   maxMoney: 0
-  _currentMoney: 0
+  _currentMoney: 100
   crewSpeed: 0
-  firepower: 0
+  machinegunfirepower: 0
+  rocketfirepower: 0
+  laserfirepower: 0
   energyPower: 0
   hullStrength: 0
   barrierStrength: 0
-  machineGunMoveList: []
-  specialGunsMoveList: []
   deadShip: 0
