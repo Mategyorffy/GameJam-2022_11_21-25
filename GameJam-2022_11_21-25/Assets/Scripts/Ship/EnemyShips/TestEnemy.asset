@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1890caa5196a3c4499de012d589b2085, type: 3}
   m_Name: TestEnemy
   m_EditorClassIdentifier: 
-  name: 
-  maxHP: 0
-  _currentHP: 0
-  maxFuel: 0
-  _currentFuel: 0
-  maxRocketAmmo: 0
-  _currentRocketAmmo: 0
-  maxLaserAmmo: 0
-  _currentLaserAmmo: 0
-  maxMoney: 0
-  _currentMoney: 0
-  crewSpeed: 0
-  machinegunfirepower: 0
-  rocketfirepower: 0
-  laserfirepower: 0
-  energyPower: 0
-  hullStrength: 0
-  barrierStrength: 0
+  name: Enemy
+  maxHP: 100
+  _currentHP: 50
+  maxFuel: 10
+  _currentFuel: 10
+  maxRocketAmmo: 10
+  _currentRocketAmmo: 10
+  maxLaserAmmo: 10
+  _currentLaserAmmo: 10
+  maxMoney: 10
+  _currentMoney: 10
+  crewSpeed: 20
+  machinegunfirepower: 10
+  rocketfirepower: 10
+  laserfirepower: 10
+  energyPower: 10
+  hullStrength: 10
+  barrierStrength: 10
   deadShip: 0
