@@ -39,8 +39,8 @@ public class planet : MonoBehaviour
 
     private void Start()
     {
-        shipInfo = GameObject.Find("Manager").GetComponent<CharacterStat>();
         customGrayColor = new Color(0.70f, 0.70f, 0.70f, 1.0f);
+        shipInfo = GameObject.Find("Manager").GetComponent<CharacterStat>();
         safePlanetGold = 100;
     }
 
@@ -140,8 +140,8 @@ public class planet : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        playerWasHere = true;
         GetComponent<SpriteRenderer>().material.color = customGrayColor;
+        playerWasHere = true;
     }
 
     public IEnumerator EnemyEncounter()
