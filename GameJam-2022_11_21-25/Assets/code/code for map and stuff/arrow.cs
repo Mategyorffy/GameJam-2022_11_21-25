@@ -1,3 +1,4 @@
+using GameJam;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,10 @@ public class arrow : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (Store.wasShopOpened)
+        {
+            return;
+        }
         planetscript.isPlayerHere = false;
 
         spaceShip.startPosition = spaceShip.transform.position;
