@@ -20,7 +20,17 @@ namespace GameJam
             Dead
         }
 
+
+      [SerializeField]  public bool PlayerProjectileInbound;
+
+        [SerializeField] GameObject RocketObj;
+        [SerializeField] GameObject LaserObj;
+        [SerializeField] GameObject MachineGunObj;
+        private GameObject currentAttackObj;
+        [SerializeField] private Transform AttackPoint;
+        [Space]
         
+        [Space]
         public TurnState currentState;
 
         [SerializeField] internal float currentCooldown = 0f;
@@ -46,7 +56,7 @@ namespace GameJam
 
         public EnemyShipStateMachine enemyToAttack;
         int currentPower;
-
+        [Space]
         [SerializeField] private AudioSource NotifySoundSource;
         [SerializeField] private AudioSource MainAudioSource;
         [SerializeField] private AudioSource ExplosionAudioSource;
@@ -55,6 +65,8 @@ namespace GameJam
         [SerializeField] private AudioClip HpLow;
         [SerializeField] private AudioClip Explosion1;
         [SerializeField] private AudioClip Explosion2;
+        [Space]
+        [SerializeField] private List<Light> HudLights = new List<Light>();
         
 
 
@@ -73,7 +85,22 @@ namespace GameJam
             machineGunButtonImage.color = Color.gray;
             rocketButtonImage.color = Color.gray;
             laserButtonImage.color = Color.gray;
-
+            if(playerSO.currentHP <= 50)
+            {
+                foreach(Light lights in HudLights)
+                {
+                    lights.color = Color.red;
+                }
+                
+            }
+            if(playerSO.currentHP >= 51)
+            {
+                foreach (Light lights in HudLights)
+                {
+                    lights.color = Color.green;
+                }
+            }
+                    
 
         }
 
@@ -107,18 +134,56 @@ namespace GameJam
                 case TurnState.ButtonsLightUp:
                     buttonPressable = true;
                     ActivateAttackButtons();
-                    currentState = TurnState.Waiting;
+                    
                     break;
                 case TurnState.Waiting:
                     
                     break;
                 case TurnState.Action:
-                    FireWeaponAtCurrentTarget(currentPower);
+                   
                     break;
             }
-         
+            if (PlayerProjectileInbound)
+            {
+                currentState = TurnState.Processing;
+                if (currentAttackObj != null)
+                {
+                    currentAttackObj.transform.position = Vector3.MoveTowards(currentAttackObj.transform.position, enemyToAttack.transform.position, 20f * Time.deltaTime);
+                    currentAttackObj.transform.LookAt(enemyToAttack.transform);
+                    Debug.Log("Good 1");
+                    if(currentAttackObj.transform.position == enemyToAttack.transform.position)
+                    {
+                        Debug.Log("Good 2");
+                        if (currentPower == 1)
+                        {
+                            enemyToAttack.TakeMachineGunDamage(playerSO.machinegunfirepower);
+                            Destroy(currentAttackObj);
+                            PlayerProjectileInbound = false;
+
+                        }
+                        if (currentPower == 2)
+                        {
+                            enemyToAttack.TakeLaserDamage(playerSO.laserfirepower);
+                            Destroy(currentAttackObj);
+                            PlayerProjectileInbound = false;
+
+
+                        }
+                        if (currentPower == 3)
+                        {
+                            enemyToAttack.TakeRocketDamage(playerSO.rocketfirepower);
+                            Destroy(currentAttackObj);
+                            PlayerProjectileInbound = false;
+
+
+                        }
+                       
+                    }
+                }
+            }
 
         }
+
 
         void UpgradeTimerBar()
         {
@@ -140,6 +205,10 @@ namespace GameJam
         {
             MainAudioSource.clip = HpLow;
             MainAudioSource.Play();
+            foreach (Light lights in HudLights)
+            {
+                lights.color = Color.red;
+            }
         }
         void UpdateLaserAmmoAmount(int ammount)
         {
@@ -153,7 +222,7 @@ namespace GameJam
         }
         public void ActivateAttackButtons()
         {
-            
+            currentState = TurnState.Waiting;
 
             reloadText.text = "Take Action";
             // Machine Gun 0
@@ -174,31 +243,13 @@ namespace GameJam
         }
         public void ReactivateAttackButtons()
         {
+           
             machineGunButton.SetActive(true);
             laserButton.SetActive(true);
             RocketButton.SetActive(true);
         }
 
-        public void FireWeaponAtCurrentTarget(int Power)
-        {
-            
-
-            if(Power == 1)
-            {
-                enemyToAttack.TakeMachineGunDamage(playerSO.machinegunfirepower);
-                currentState = TurnState.Processing;
-            }
-            if(Power == 2)
-            {
-                enemyToAttack.TakeLaserDamage(playerSO.laserfirepower);
-                currentState = TurnState.Processing;
-            }
-            if(Power == 3)
-            {
-                enemyToAttack.TakeRocketDamage(playerSO.rocketfirepower);
-                currentState = TurnState.Processing;
-            }
-        }
+    
 
         public void FireMachineGun()
         {
@@ -218,8 +269,9 @@ namespace GameJam
                 rocketButtonImage.color = Color.gray;
                 laserButtonImage.color = Color.gray;
                 reloadText.text = "Reloading..";
-                currentState = TurnState.Waiting;
-             
+                currentAttackObj = GameObject.Instantiate(MachineGunObj, AttackPoint.transform);
+                
+
 
             }
             else
@@ -251,7 +303,9 @@ namespace GameJam
                     {
                         playerSO.currentLaserAmmo = 0;
                     }
-                    currentState = TurnState.Waiting;
+                    currentAttackObj = GameObject.Instantiate(LaserObj, AttackPoint.transform);
+                   
+
                 }
                 else
                 {
@@ -304,7 +358,9 @@ namespace GameJam
                     {
                         playerSO.currentRocketAmmo = 0;
                     }
-                    currentState = TurnState.Waiting;
+                    currentAttackObj = GameObject.Instantiate(RocketObj, AttackPoint.transform);
+                    
+                   
                 }
                 else
                 {

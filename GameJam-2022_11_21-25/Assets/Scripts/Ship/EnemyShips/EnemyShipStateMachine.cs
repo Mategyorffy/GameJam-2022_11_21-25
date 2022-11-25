@@ -51,6 +51,9 @@ namespace GameJam
             shipbattle = GameObject.Find("BattleManager").GetComponent<ShipBattleStateMachine>();
             hpText.text = $"{enemySO.currentHP} HP";
             ProjectileFinalPos = GameObject.Find("ProjectilePos");
+            enemySO.currentHP = enemySO.maxHP;
+            enemySO.currentLaserAmmo = enemySO.maxLaserAmmo;
+            enemySO.currentRocketAmmo = enemySO.maxRocketAmmo;
 
         }
         
@@ -94,6 +97,7 @@ namespace GameJam
                    
 
                     currentAttackObj.transform.position = Vector3.MoveTowards(currentAttackObj.transform.position, ProjectileFinalPos.transform.position, 20f * Time.deltaTime);
+                    currentAttackObj.transform.LookAt(ProjectileFinalPos.transform);
 
                     if(currentAttackObj.transform.position == ProjectileFinalPos.transform.position)
                     {
