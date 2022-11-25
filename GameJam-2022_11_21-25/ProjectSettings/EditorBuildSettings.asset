@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/map/map.unity
     guid: e027422018a8bb44e8843875193c218d
+  - enabled: 1
+    path: Assets/Scenes/Planets/BattleScene.unity
+    guid: bc64a91ca7f3c45469c89bef6d5ddc48
   m_configObjects: {}

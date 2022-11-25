@@ -80,6 +80,7 @@ namespace GameJam
 
             characterLevelUp.LevelUpShip();
             Debug.Log("YOU WINN");
+            SceneManager.UnloadSceneAsync(2);
           
         }
 
