@@ -9,6 +9,7 @@ public class arrow : MonoBehaviour
     [SerializeField] GameObject nextPlanet;
     [SerializeField] ship spaceShip;
     [SerializeField] planet planetscript;
+    
 
     public Sprite arrowOff;
     public Sprite arrowOn;
