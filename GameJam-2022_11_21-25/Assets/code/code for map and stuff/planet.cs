@@ -8,12 +8,11 @@ public class planet : MonoBehaviour
     public bool isPlayerHere = false;
     public bool playerWasHere = false;
 
-    private bool safePlanet;
-    private bool asteroid;
-    private bool shopPlanet;
-    private bool enemyPlanet;
-    private bool wormHole;
-    private bool finalBoss;
+    [SerializeField] private bool safePlanet;
+    [SerializeField] private bool asteroid;
+    [SerializeField] private bool enemyPlanet;
+    [SerializeField] private bool wormHole;
+    [SerializeField] private bool finalBoss;
 
 
     [SerializeField] GameObject prArrow1; //possibleRoute
@@ -25,7 +24,7 @@ public class planet : MonoBehaviour
 
     private void Start()
     {
-        customGrayColor = new Color(0.70f, 0.70f, 0.70f, 0.8f);
+        customGrayColor = new Color(0.70f, 0.70f, 0.70f, 1.0f);
     }
 
     void Update()
@@ -65,10 +64,6 @@ public class planet : MonoBehaviour
 
         }
         if (asteroid)
-        {
-
-        }
-        if (shopPlanet)
         {
 
         }
