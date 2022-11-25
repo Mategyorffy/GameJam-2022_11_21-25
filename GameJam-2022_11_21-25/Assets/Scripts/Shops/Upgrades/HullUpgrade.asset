@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c89a695a5d2fa45b8cad575ab21e73, type: 3}
   m_Name: HullUpgrade
   m_EditorClassIdentifier: 
-  buff: 0
+  buff: 5
   shopPurchaseAmount: 0
   shopYesVariable: 0
-  goldCost: 0
+  goldCost: 50
   shopInfoText: Increasing your hull decreases damage taken from rockets and machine
     guns

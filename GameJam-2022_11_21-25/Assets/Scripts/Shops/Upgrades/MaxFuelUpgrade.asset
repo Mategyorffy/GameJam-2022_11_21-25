@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eceb995cc51cab94aa81082499853483, type: 3}
   m_Name: MaxFuelUpgrade
   m_EditorClassIdentifier: 
-  buff: 0
+  buff: 5
   shopPurchaseAmount: 0
   shopYesVariable: 0
-  goldCost: 0
+  goldCost: 50
   shopInfoText: Increase how much fuel you can hold

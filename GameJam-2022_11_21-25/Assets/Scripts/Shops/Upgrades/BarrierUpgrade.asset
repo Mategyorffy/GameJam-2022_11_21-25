@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc088cd2e25171f4b852a2bb326db04e, type: 3}
   m_Name: BarrierUpgrade
   m_EditorClassIdentifier: 
-  buff: 0
+  buff: 5
   shopPurchaseAmount: 0
   shopYesVariable: 0
-  goldCost: 0
+  goldCost: 50
   shopInfoText: Barriers helps you take less damage from enemy lasers.

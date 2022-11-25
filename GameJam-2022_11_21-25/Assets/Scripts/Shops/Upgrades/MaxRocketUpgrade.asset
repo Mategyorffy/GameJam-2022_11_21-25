@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d876494e51a8a240af06acbfd841beb, type: 3}
   m_Name: MaxRocketUpgrade
   m_EditorClassIdentifier: 
-  buff: 0
+  buff: 5
   shopPurchaseAmount: 0
   shopYesVariable: 0
-  goldCost: 0
+  goldCost: 50
   shopInfoText: Increase your rocket reserves

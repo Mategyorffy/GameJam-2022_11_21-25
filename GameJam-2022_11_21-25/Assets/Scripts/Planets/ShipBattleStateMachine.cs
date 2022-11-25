@@ -19,6 +19,7 @@ namespace GameJam
         [SerializeField] private GameObject Button3;
         [SerializeField] private GameObject Button4;
 
+        public static bool combat;
         [SerializeField] private AudioSource MainAudio;
 
         [SerializeField] private CharaterLevelSystem characterLevelUp;
@@ -27,6 +28,7 @@ namespace GameJam
         private void Start()
         {
             MainAudio.Play();
+            combat = true;
         }
 
 
@@ -52,10 +54,13 @@ namespace GameJam
             if(EnemiesInGame.Count < 1)
             {
                 BattleWon();
+                combat= false;
+                planet.wasCalledOnce = false;
             }
             if(player.playerSO.currentHP <= 0)
             {
                 BattleLost();
+                combat= false;  
             }
         }
 

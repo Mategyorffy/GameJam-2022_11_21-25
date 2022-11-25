@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa02aab641841da45a296255bed4d29b, type: 3}
   m_Name: MaxHealthUpgrade
   m_EditorClassIdentifier: 
-  buff: 0
+  buff: 5
   shopPurchaseAmount: 0
   shopYesVariable: 0
-  goldCost: 0
+  goldCost: 50
   shopInfoText: Increase how much of a beating you can take

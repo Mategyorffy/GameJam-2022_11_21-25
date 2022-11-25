@@ -16,7 +16,7 @@ namespace GameJam
     void Start()
         {
             titleMusic.Play();
-            information.text = "This is also a place holder";
+            information.text = "A simple game made with time, redbull, and stress";
         }
 
         // Update is called once per frame

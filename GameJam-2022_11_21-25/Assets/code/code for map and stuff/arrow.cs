@@ -29,6 +29,10 @@ public class arrow : MonoBehaviour
         {
             return;
         }
+        if (ShipBattleStateMachine.combat)
+        {
+            return;
+        }
         planetscript.isPlayerHere = false;
 
         spaceShip.startPosition = spaceShip.transform.position;

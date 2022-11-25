@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.003103807, g: 0.0027302764, b: 0.0033076787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1043,10 +1043,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &36752310
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2665,10 +2667,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &108933650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3146,10 +3150,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &134567750
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3295,10 +3301,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &143124513
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4145,7 +4153,7 @@ MonoBehaviour:
   wormHole: 1
   finalPlanet: 0
   wormHoleUsed: 0
-  startPlanet: {fileID: 0}
+  startPlanet: {fileID: 1874645474}
   shipship: {fileID: 288670377}
   prArrow1: {fileID: 1312450959}
   prArrow2: {fileID: 1319039338}
@@ -4153,10 +4161,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 0}
 --- !u!212 &183088104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5046,10 +5056,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &225836963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5180,10 +5192,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &234807445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5960,6 +5974,11 @@ PolygonCollider2D:
       - {x: -3.1353745, y: -6.704365}
       - {x: -3.1487164, y: -6.6376543}
       - {x: -2.9886122, y: -6.6376543}
+--- !u!1 &247332509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2436559612790963127, guid: 4b0dd8c2b25fefe48b89f187b5bebc7e, type: 3}
+  m_PrefabInstance: {fileID: 2436559611175542340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &254079439
 GameObject:
   m_ObjectHideFlags: 0
@@ -6537,7 +6556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288670374}
   m_LocalRotation: {x: -0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 24.48, y: 0.05, z: 0}
+  m_LocalPosition: {x: -13, y: 0.05, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9787,10 +9806,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &365751428
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10315,10 +10336,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &375693584
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13945,10 +13968,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &555288101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14517,10 +14542,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &590725747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15375,10 +15402,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &625147466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15871,10 +15900,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &650181936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16367,10 +16398,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &667848885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18311,10 +18344,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &699165572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19214,10 +19249,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &740200019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19741,10 +19778,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &771202953
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20669,10 +20708,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &795548594
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20803,10 +20844,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &820485134
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21876,10 +21919,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &923460817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23787,10 +23832,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1001968989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24679,10 +24726,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1065948825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25175,10 +25224,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1128490107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25639,7 +25690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bd5e2fb3f396943a8bff87abc946e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlanet: {fileID: 0}
+  nextPlanet: {fileID: 134567747}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 1128490106}
   shipFuel: {fileID: 0}
@@ -26033,10 +26084,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1153889194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26167,10 +26220,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1155519726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26301,10 +26356,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1204137448
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26797,10 +26854,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1207843005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26931,10 +26990,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1208269133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27927,7 +27988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bd5e2fb3f396943a8bff87abc946e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlanet: {fileID: 0}
+  nextPlanet: {fileID: 134567747}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 143124512}
   shipFuel: {fileID: 0}
@@ -29977,10 +30038,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1413190360
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30473,10 +30536,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1430404351
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31331,10 +31396,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1517667222
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31998,10 +32065,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1534473350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32246,10 +32315,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1570138006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34274,7 +34345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bd5e2fb3f396943a8bff87abc946e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlanet: {fileID: 0}
+  nextPlanet: {fileID: 134567747}
   spaceShip: {fileID: 288670377}
   planetscript: {fileID: 2077618538}
   shipFuel: {fileID: 0}
@@ -34808,10 +34879,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1669363078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36112,10 +36185,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1703935385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36608,10 +36683,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1719046346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37104,10 +37181,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1732167243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37600,10 +37679,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1739693433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38096,10 +38177,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1741494427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38592,10 +38675,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1773499272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40605,10 +40690,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1839844492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41108,10 +41195,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1874645477
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44502,10 +44591,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1987054574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44998,10 +45089,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &1997244944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45890,10 +45983,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &2050239776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47154,10 +47249,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &2077618539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48012,10 +48109,12 @@ MonoBehaviour:
   information: {fileID: 256272912}
   safePlanetGold: 0
   asteroidChance: 0
+  wormHoleChance: 0
   shipInfo: {fileID: 11400000, guid: 16fae63de27346c48a32250c7c8f3f4a, type: 2}
   startingPlanet: {fileID: 1874645474}
   wormholeGold: 0
   wormHoleChoice: {fileID: 1858029025}
+  infoPanel: {fileID: 247332509}
 --- !u!212 &2099454358
 SpriteRenderer:
   m_ObjectHideFlags: 0
