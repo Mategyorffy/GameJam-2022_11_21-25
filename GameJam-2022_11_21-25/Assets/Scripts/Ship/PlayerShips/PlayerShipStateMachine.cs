@@ -31,18 +31,25 @@ namespace GameJam
         private  ShipBattleStateMachine shipBattle;
         public TMP_Text rocketAmmoCount;
         public TMP_Text laserAmmoCount;
+
       
         [SerializeField] private Image machineGunButtonImage;
         [SerializeField] private Image laserButtonImage;
         [SerializeField] private Image rocketButtonImage;
-        public bool buttonPressable;
+        [SerializeField] private GameObject machineGunButton;
+        [SerializeField] private GameObject laserButton;
+        [SerializeField] private GameObject RocketButton;
+        public bool buttonPressable = false;
 
-        public List<GameObject> enemies = new List<GameObject>();
+        public EnemyShipStateMachine enemyToAttack;
+        int currentPower;
+
 
         private void Start()
         {
             hpSlider.value = playerSO.currentHP;
             shipBattle = GameObject.Find("BattleManager").GetComponent<ShipBattleStateMachine>();
+            
             playerSO.OnPlayerHealthChange += PlayerHPChange;
             playerSO.OnLaserChange += UpdateLaserAmmoAmount;
             playerSO.OnRocketChange += UpdateRocketAmmoAmount;
@@ -83,6 +90,12 @@ namespace GameJam
                     buttonPressable = true;
                     ActivateAttackButtons();
                     currentState = TurnState.Waiting;
+                    break;
+                case TurnState.Waiting:
+                    
+                    break;
+                case TurnState.Action:
+                    FireWeaponAtCurrentTarget(currentPower);
                     break;
             }
 
@@ -133,25 +146,53 @@ namespace GameJam
             }
 
         }
-
-        private IEnumerator PlayerAction()
+        public void ReactivateAttackButtons()
         {
-            yield return new WaitForSeconds(5);
+            machineGunButton.SetActive(true);
+            laserButton.SetActive(true);
+            RocketButton.SetActive(true);
+        }
+
+        public void FireWeaponAtCurrentTarget(int Power)
+        {
+            
+
+            if(Power == 1)
+            {
+                enemyToAttack.TakeMachineGunDamage(playerSO.machinegunfirepower);
+                currentState = TurnState.Processing;
+            }
+            if(Power == 2)
+            {
+                enemyToAttack.TakeLaserDamage(playerSO.laserfirepower);
+                currentState = TurnState.Processing;
+            }
+            if(Power == 3)
+            {
+                enemyToAttack.TakeRocketDamage(playerSO.rocketfirepower);
+                currentState = TurnState.Processing;
+            }
         }
 
         public void FireMachineGun()
         {
+            
             if (buttonPressable)
             {
                 Debug.Log("FIRING MACHINE GUN");
                 currentCooldown = 0;
                 timerBar.value = currentCooldown;
+                machineGunButton.SetActive(false);
+                laserButton.SetActive(false);
+                RocketButton.SetActive(false);
+                shipBattle.EnableEnemyButtons();
+                currentPower = 1;
                 buttonPressable = false;
                 machineGunButtonImage.color = Color.gray;
                 rocketButtonImage.color = Color.gray;
                 laserButtonImage.color = Color.gray;
                 reloadText.text = "Reloading..";
-                currentState = TurnState.Processing;
+                currentState = TurnState.Waiting;
 
             }
             else
@@ -161,42 +202,70 @@ namespace GameJam
         }
         public void FireLaser()
         {
-            if (buttonPressable)
+            if (playerSO.currentLaserAmmo > 0)
             {
-                Debug.Log("FIRING LASER");
-                currentCooldown = 0;
-                timerBar.value = currentCooldown;
-                buttonPressable = false;
-                machineGunButtonImage.color = Color.gray;
-                rocketButtonImage.color = Color.gray;
-                laserButtonImage.color = Color.gray;
-                reloadText.text = "Reloading..";
-                playerSO.currentLaserAmmo--;
-                currentState = TurnState.Processing;
+                if (buttonPressable)
+                {
+                    Debug.Log("FIRING LASER");
+                    currentCooldown = 0;
+                    timerBar.value = currentCooldown;
+                    machineGunButton.SetActive(false);
+                    laserButton.SetActive(false);
+                    RocketButton.SetActive(false);
+                    shipBattle.EnableEnemyButtons();
+                    currentPower = 2;
+                    buttonPressable = false;
+                    machineGunButtonImage.color = Color.gray;
+                    rocketButtonImage.color = Color.gray;
+                    laserButtonImage.color = Color.gray;
+                    reloadText.text = "Reloading..";
+                    playerSO.currentLaserAmmo--;
+                    if(playerSO.currentLaserAmmo < 0)
+                    {
+                        playerSO.currentLaserAmmo = 0;
+                    }
+                    currentState = TurnState.Waiting;
+                }
+                else
+                {
+                    return;
+                }
             }
-            else
-            {
-                return;
-            }
+
         }
         public void FireRockets()
         {
-            if (buttonPressable)
+            if (playerSO.currentRocketAmmo > 0)
             {
-                Debug.Log("FIRING ROCKETS");
-                currentCooldown = 0;
-                timerBar.value = currentCooldown;
-                buttonPressable = false;
-                machineGunButtonImage.color = Color.gray;
-                rocketButtonImage.color = Color.gray;
-                laserButtonImage.color = Color.gray;
-                reloadText.text = "Reloading..";
-                playerSO.currentRocketAmmo--;
-                currentState = TurnState.Processing;
-            }
-            else
-            {
-                return;
+
+                if (buttonPressable)
+                {
+                    Debug.Log("FIRING ROCKETS");
+                    currentCooldown = 0;
+                    timerBar.value = currentCooldown;
+                    machineGunButton.SetActive(false);
+                    laserButton.SetActive(false);
+                    RocketButton.SetActive(false);
+                    shipBattle.EnableEnemyButtons();
+                    currentPower = 3;
+                    buttonPressable = false;
+                    machineGunButtonImage.color = Color.gray;
+                    rocketButtonImage.color = Color.gray;
+                    laserButtonImage.color = Color.gray;
+                    reloadText.text = "Reloading..";
+                    playerSO.currentRocketAmmo--;
+                    if (playerSO.currentRocketAmmo < 0)
+                    {
+                        playerSO.currentRocketAmmo = 0;
+                    }
+                    currentState = TurnState.Waiting;
+                }
+                else
+                {
+                    return;
+
+                }
+
             }
         }
         public void TakeMachineGunDamage(float Power)

@@ -8,39 +8,95 @@ namespace GameJam
     {
         public List<GameObject> EnemiesInGame = new List<GameObject>();
 
-        private List<GameObject> EnemyBtns = new List<GameObject>();
-        public GameObject enemyButton;
+     
+        
         public Transform spacer;
+        [SerializeField] Transform enemyButtonLoc;
 
-        public void EnemyButtons()
+        [SerializeField] private GameObject Button1;
+        [SerializeField] private GameObject Button2;
+        [SerializeField] private GameObject Button3;
+        [SerializeField] private GameObject Button4;
+
+        public enum PlayerUI
         {
-            int enemyButtonCount = 0;
-            foreach (GameObject enemyBtn in EnemyBtns)
-            {
-                Destroy(enemyBtn);
-            }
-            EnemyBtns.Clear();
-            foreach (GameObject enemy in EnemiesInGame)
-            {
-                GameObject newButton = Instantiate(enemyButton) as GameObject;
-                ButtonSelect button = newButton.GetComponent<ButtonSelect>();
+            Activate,
+            Done
+        }
+        public PlayerUI playerUI;
 
-                EnemyShipStateMachine currentEnemy = enemy.GetComponent<EnemyShipStateMachine>();
-                //if buttons font work you may have to tweak
-                TextMeshProUGUI buttonText = newButton.transform.Find("Name").gameObject.GetComponent<TextMeshProUGUI>();
-                buttonText.text = currentEnemy.enemySO.name;
-                newButton.name = "Enemy" + enemyButtonCount;
-                button.enemyPrefab = enemy;
-                newButton.transform.SetParent(spacer, false);
-                EnemyBtns.Add(newButton);
-                enemyButtonCount++;
+        private void Update()
+        {
+            switch (playerUI)
+            {
+                case PlayerUI.Activate:
+                    
+                    break;
+                case PlayerUI.Done:
+                    
+                    break;
+            }
+
+            if(EnemiesInGame.Count < 1)
+            {
+                BattleWon();
             }
         }
 
-        public void EnemySelectButton(GameObject enemyChoosen)
+        public void DisableEnemyButtons()
         {
-            
-           
+
+
+            Button1.SetActive(false);
+            Button2.SetActive(false);
+            Button3.SetActive(false);
+            Button4.SetActive(false);
+        }
+
+
+
+
+
+
+
+        public void BattleWon()
+        {
+            Debug.Log("YOU WINN");
+        }
+
+
+
+
+
+
+
+
+
+        public void EnableEnemyButtons()
+        {
+
+            for (int i = 0; i < EnemiesInGame.Count; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        Button1.SetActive(true);
+                        break;
+                    case 1:
+                        Button2.SetActive(true);
+                        break;
+                    case 2:
+                        Button3.SetActive(true);
+                        break;
+                    case 3:
+                        Button4.SetActive(true);
+                        break;
+                }
+
+            }
+
+
+
         }
     }
 }

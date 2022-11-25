@@ -9,12 +9,9 @@ namespace GameJam
     {
         public GameObject enemyPrefab;
         private bool _isSelected;
-        
 
-        public void SelectEnemy()
-        {
-            GameObject.Find("BattleManager").GetComponent<ShipBattleStateMachine>().EnemySelectButton(enemyPrefab);
-        }
+     
+
 
         public void ShowEnemySelection()
         {

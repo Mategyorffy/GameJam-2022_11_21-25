@@ -12,17 +12,19 @@ namespace GameJam
         [SerializeField] List<GameObject> enemies = new List<GameObject>();
         [SerializeField] List<Transform> enemySpawnLocations = new List<Transform>();
         [SerializeField] Transform playerSpawnlocation;
+        [SerializeField] Transform enemyButtonLoc;
 
         private int numberOfEnemies;
         private int whatEnemy;
-        private int enemyCount;
+        private int enemyCount = 0;
         private GameObject newEnemy;
         private  void Start()
         {
             
 
-            GameObject.Instantiate(playerToSpawn, playerSpawnlocation);
+           
 
+           
 
 
 
@@ -35,6 +37,7 @@ namespace GameJam
                     case 1:
                         Debug.Log("Made it to one");
                         shipbattle.EnemiesInGame.Add(newEnemy);
+                        
                         break;
 
 
@@ -42,27 +45,22 @@ namespace GameJam
                     case 2:
                         Debug.Log("Made it to two");
                         shipbattle.EnemiesInGame.Add(newEnemy);
+                       
                         break;
 
                     case 3:
                         Debug.Log("Made it to three");
                         shipbattle.EnemiesInGame.Add(newEnemy);
+                      
                         break;
 
                     case 4:
                         Debug.Log("Made it to four");
-                        shipbattle.EnemiesInGame.Add(newEnemy); 
+                        shipbattle.EnemiesInGame.Add(newEnemy);
+                      
                         break;
                 }
                 enemyCount++;
-            }
-            shipbattle.EnemyButtons();
-
-            foreach (Transform loc in enemySpawnLocations)
-            {
-
-
-               
             }
 
         }
@@ -76,6 +74,7 @@ namespace GameJam
             newEnemy.gameObject.name = enemies[whatEnemy].name + enemyCount;
 
         }
+
 
     }
 }

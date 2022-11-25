@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,10 +22,15 @@ namespace GameJam
         public TurnState currentState;
 
         [SerializeField] private Slider hpSlider;
+        [SerializeField] private TMP_Text hpText;
         [SerializeField] private Canvas healthCanvas;
         [SerializeField] internal float currentCooldown = 0f;
         private float maxCooldown = 100f;
        [SerializeField] PlayerShipStateMachine player;
+
+        [SerializeField] ShipBattleStateMachine shipbattle;
+
+        
 
         [SerializeField] GameObject RocketObj;
         [SerializeField] GameObject LaserObj;
@@ -32,13 +38,19 @@ namespace GameJam
         private GameObject currentAttackObj;
 
         private bool ProjectileInbound;
+        private bool _isDead = false;
+
 
         private void Start()
         {
+            
             healthCanvas.worldCamera = GameObject.FindGameObjectWithTag("PlayerCamera").GetComponent<Camera>();
-           
-           
+            shipbattle = GameObject.Find("BattleManager").GetComponent<ShipBattleStateMachine>();
+            hpText.text = $"{enemySO.currentHP} HP";
+
+
         }
+        
 
         private void Update()
         {
@@ -48,17 +60,29 @@ namespace GameJam
                     UpgradeTimerBar();
                     break;
                 case TurnState.Action:
-                    
+
                     AttackPlayer();
                     break;
                 case TurnState.Waiting:
                     currentCooldown = 0f;
                     currentState = TurnState.Processing;
                     break;
+                case TurnState.Dead:
+                    if (_isDead)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        //Change tag
+                        ProjectileInbound = false;
+                        //Make the object not able to be hit
+                        shipbattle.EnemiesInGame.Remove(this.gameObject);
+                        Destroy(this.gameObject);
+                    }
+                    break;
+
             }
-
-
-
 
             if (ProjectileInbound)
             {
@@ -76,8 +100,28 @@ namespace GameJam
 
                 }
             }
+            else if (!ProjectileInbound)
+            {
+                Destroy(currentAttackObj);  
+            }
         }
+        public void EnemyHPChange(float health)
+        {
+            
 
+            if (enemySO.currentHP < 0)
+            {
+                currentState = TurnState.Dead;
+                enemySO.currentHP = 0;
+            }
+            else if (enemySO.currentHP > enemySO.maxHP)
+            {
+                enemySO.currentHP = enemySO.maxHP;
+            }
+            hpSlider.value = (health / enemySO.maxHP) * 100;
+            hpText.text = $"{enemySO.currentHP} HP";
+
+        }
         void UpgradeTimerBar()
         {
 
@@ -119,6 +163,9 @@ namespace GameJam
             }
         }
 
+
+
+
         public void MachineGunAttack()
         {
 
@@ -132,7 +179,7 @@ namespace GameJam
         public void LaserAttack()
         {
 
-            currentAttackObj = GameObject.Instantiate(MachineGunObj, transform.position, transform.rotation);
+            currentAttackObj = GameObject.Instantiate(LaserObj, transform.position, transform.rotation);
             ProjectileInbound = true;
             player.TakeLaserDamage(enemySO.laserfirepower);
             Debug.Log($"{currentAttackObj.name} IS INBOUND FOR PLAYER");
@@ -141,13 +188,40 @@ namespace GameJam
         public void RocketAttack()
         {
 
-            currentAttackObj = GameObject.Instantiate(MachineGunObj, transform.position, transform.rotation);
+            currentAttackObj = GameObject.Instantiate(RocketObj, transform.position, transform.rotation);
             ProjectileInbound = true;
             player.TakeRocketDamage(enemySO.rocketfirepower);
             Debug.Log($"{currentAttackObj.name} IS INBOUND FOR PLAYER");
             currentState = TurnState.Waiting;
         }
 
-        
+       public void TakeMachineGunDamage(float damage)
+        {
+            enemySO.currentHP = enemySO.currentHP - damage;
+            EnemyHPChange(enemySO.currentHP);
+            if (enemySO.currentHP <= 0)
+            {
+                currentState = TurnState.Dead;
+            }
+        }
+        public void TakeLaserDamage(float damage)
+        {
+            enemySO.currentHP = enemySO.currentHP - damage;
+            EnemyHPChange(enemySO.currentHP);
+            if (enemySO.currentHP <= 0)
+            {
+                currentState = TurnState.Dead;
+            }
+        }
+        public void TakeRocketDamage(float damage)
+        {
+            enemySO.currentHP = enemySO.currentHP - damage;
+            EnemyHPChange(enemySO.currentHP);
+            if (enemySO.currentHP <= 0)
+            {
+                currentState = TurnState.Dead;
+            }
+        }
+
     }
 }
