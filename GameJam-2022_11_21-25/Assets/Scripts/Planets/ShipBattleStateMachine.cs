@@ -77,10 +77,7 @@ namespace GameJam
 
         public void BattleWon()
         {
-
-            characterLevelUp.LevelUpShip();
-            Debug.Log("YOU WINN");
-            SceneManager.UnloadSceneAsync(2);
+            StartCoroutine(LevelUpSeQuence());
           
         }
 
@@ -120,6 +117,13 @@ namespace GameJam
 
 
 
+        }
+
+        public IEnumerator LevelUpSeQuence() 
+        {
+            characterLevelUp.LevelUpShip();
+            yield return new WaitForSeconds(3);
+            SceneManager.UnloadSceneAsync("BattleScene", UnloadSceneOptions.None);
         }
     }
 }

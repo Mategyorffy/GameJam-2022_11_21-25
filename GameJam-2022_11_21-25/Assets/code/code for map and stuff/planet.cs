@@ -78,7 +78,8 @@ public class planet : MonoBehaviour
 
         if (safePlanet)
         {
-            information.text = "Everything seems fine here we even found " + safePlanetGold + " gold!";
+            information.text = "Everything seems fine here we even found some gold!";
+            shipInfo.currentMoney += 100;
         }
         if (asteroid)
         {
@@ -148,7 +149,7 @@ public class planet : MonoBehaviour
 
         information.text = "Enemy detected Battle stations!";
         yield return new WaitForSeconds(3);
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
     }
 
     public IEnumerator FinalScene()

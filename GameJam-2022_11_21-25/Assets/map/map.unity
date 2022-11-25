@@ -1035,6 +1035,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 206047796}
   prArrow2: {fileID: 0}
   prArrow3: {fileID: 0}
@@ -2655,6 +2657,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 246179222}
   prArrow2: {fileID: 1383723755}
   prArrow3: {fileID: 0}
@@ -3149,6 +3153,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1288622946}
   prArrow2: {fileID: 1575799109}
   prArrow3: {fileID: 0}
@@ -4005,6 +4011,8 @@ MonoBehaviour:
   wormHole: 1
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1312450959}
   prArrow2: {fileID: 1319039338}
   prArrow3: {fileID: 786359515}
@@ -4896,6 +4904,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1452820221}
   prArrow2: {fileID: 1681936928}
   prArrow3: {fileID: 2036418647}
@@ -5028,6 +5038,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 346557347}
   prArrow2: {fileID: 1806765323}
   prArrow3: {fileID: 1521719636}
@@ -9633,6 +9645,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 518809478}
   prArrow2: {fileID: 0}
   prArrow3: {fileID: 0}
@@ -10159,6 +10173,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1996769949}
   prArrow2: {fileID: 301737636}
   prArrow3: {fileID: 1614605863}
@@ -13075,6 +13091,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 0}
   prArrow2: {fileID: 0}
   prArrow3: {fileID: 0}
@@ -13923,6 +13941,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1790877193}
   prArrow2: {fileID: 563217445}
   prArrow3: {fileID: 0}
@@ -14493,6 +14513,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 704913345}
   prArrow2: {fileID: 5984392}
   prArrow3: {fileID: 0}
@@ -15349,6 +15371,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 379519056}
   prArrow2: {fileID: 1427125193}
   prArrow3: {fileID: 0}
@@ -15843,6 +15867,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 2051462487}
   prArrow2: {fileID: 937217749}
   prArrow3: {fileID: 0}
@@ -16337,6 +16363,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 884180586}
   prArrow2: {fileID: 1982326580}
   prArrow3: {fileID: 1842092694}
@@ -18279,6 +18307,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 553105778}
   prArrow2: {fileID: 1874979894}
   prArrow3: {fileID: 0}
@@ -19180,6 +19210,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 977329711}
   prArrow2: {fileID: 114696227}
   prArrow3: {fileID: 0}
@@ -19705,6 +19737,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 2069294310}
   prArrow2: {fileID: 488927217}
   prArrow3: {fileID: 0}
@@ -20631,6 +20665,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 224198080}
   prArrow2: {fileID: 1141619762}
   prArrow3: {fileID: 1226708781}
@@ -20763,6 +20799,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1912484752}
   prArrow2: {fileID: 748241142}
   prArrow3: {fileID: 106888689}
@@ -21834,6 +21872,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1779275797}
   prArrow2: {fileID: 180474026}
   prArrow3: {fileID: 681554406}
@@ -23743,6 +23783,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 306414337}
   prArrow2: {fileID: 0}
   prArrow3: {fileID: 0}
@@ -24633,6 +24675,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1586283614}
   prArrow2: {fileID: 774611283}
   prArrow3: {fileID: 662439335}
@@ -25127,6 +25171,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1141867602}
   prArrow2: {fileID: 1821190348}
   prArrow3: {fileID: 0}
@@ -25983,6 +26029,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1881935955}
   prArrow2: {fileID: 2011600222}
   prArrow3: {fileID: 0}
@@ -26115,6 +26163,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 296107959}
   prArrow2: {fileID: 1440031772}
   prArrow3: {fileID: 0}
@@ -26247,6 +26297,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1702733093}
   prArrow2: {fileID: 976592530}
   prArrow3: {fileID: 0}
@@ -26741,6 +26793,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 735527048}
   prArrow2: {fileID: 18584617}
   prArrow3: {fileID: 1676222604}
@@ -26873,6 +26927,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1034695862}
   prArrow2: {fileID: 1739192283}
   prArrow3: {fileID: 2076627507}
@@ -29917,6 +29973,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 2085568441}
   prArrow2: {fileID: 680906521}
   prArrow3: {fileID: 102835288}
@@ -30411,6 +30469,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 2102860016}
   prArrow2: {fileID: 1410114497}
   prArrow3: {fileID: 0}
@@ -31267,6 +31327,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 489740315}
   prArrow2: {fileID: 305933792}
   prArrow3: {fileID: 0}
@@ -31932,6 +31994,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 476739131}
   prArrow2: {fileID: 636795607}
   prArrow3: {fileID: 0}
@@ -32178,6 +32242,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 958561016}
   prArrow2: {fileID: 425309667}
   prArrow3: {fileID: 1708169345}
@@ -34738,6 +34804,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 369317355}
   prArrow2: {fileID: 392333840}
   prArrow3: {fileID: 0}
@@ -36040,6 +36108,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1206507237}
   prArrow2: {fileID: 697961664}
   prArrow3: {fileID: 0}
@@ -36534,6 +36604,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 235172879}
   prArrow2: {fileID: 334967344}
   prArrow3: {fileID: 0}
@@ -37028,6 +37100,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1741103051}
   prArrow2: {fileID: 75334426}
   prArrow3: {fileID: 1120062255}
@@ -37522,6 +37596,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1935261464}
   prArrow2: {fileID: 537232617}
   prArrow3: {fileID: 0}
@@ -38016,6 +38092,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1882998085}
   prArrow2: {fileID: 57448079}
   prArrow3: {fileID: 0}
@@ -38510,6 +38588,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 672126583}
   prArrow2: {fileID: 608920995}
   prArrow3: {fileID: 0}
@@ -40521,6 +40601,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 254079439}
   prArrow2: {fileID: 1730792291}
   prArrow3: {fileID: 870770051}
@@ -41022,6 +41104,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 2090752970}
   prArrow2: {fileID: 690152709}
   prArrow3: {fileID: 1027563466}
@@ -44414,6 +44498,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1244386396}
   prArrow2: {fileID: 1951299267}
   prArrow3: {fileID: 1779090434}
@@ -44908,6 +44994,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1593441972}
   prArrow2: {fileID: 313282431}
   prArrow3: {fileID: 0}
@@ -45798,6 +45886,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 150715210}
   prArrow2: {fileID: 1748716071}
   prArrow3: {fileID: 1877197083}
@@ -47060,6 +47150,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 1645793066}
   prArrow2: {fileID: 0}
   prArrow3: {fileID: 0}
@@ -47916,6 +48008,8 @@ MonoBehaviour:
   wormHole: 0
   finalPlanet: 0
   wormHoleUsed: 0
+  startPlanet: {fileID: 0}
+  shipship: {fileID: 0}
   prArrow1: {fileID: 610603713}
   prArrow2: {fileID: 1630586463}
   prArrow3: {fileID: 340356042}
